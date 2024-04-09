@@ -18,13 +18,12 @@ When you click the **Render** button a document will be generated that includes 
 
 You can add options to executable code like this
 
-<<<<<<< HEAD
-Test from Anna
+
+
 
 Test 2 von Anna
 
-=======
->>>>>>> 2c5f0bbf4d5df4d2bd1029b81496d21335d468dc
+
 ```{r}
 #| echo: false
 2 * 2

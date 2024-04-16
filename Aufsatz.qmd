@@ -1,6 +1,6 @@
 ---
 title: "Aufsatz"
-author: "Kaja Bartsch, Zelda Becker, Lena Dung, \n Anna Feldmann, Vanessa Obermueller"
+author: "Kaja Bartsch, Zelda Becker, Lena Dung, \ Anna Feldmann, Vanessa Obermueller"
 date: today 
 format: 
   html: 
@@ -10,8 +10,8 @@ editor: visual
 fontsize: 12pt
 ---
 
-**GitHub Repository:** git\@github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git 
-**Fuer die Abgabe aktueller GitHub Hash:** 48ebcc7f7a0ab49c58ca314244116558e0c52551
+**GitHub Repository:**\  git\@github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git \
+**Fuer die Abgabe aktueller GitHub Hash:** \ 48ebcc7f7a0ab49c58ca314244116558e0c52551
 
 ## Code of Conduct
 

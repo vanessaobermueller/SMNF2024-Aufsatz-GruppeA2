@@ -1,32 +1,30 @@
 ---
 title: "Aufsatz"
+author: "Kaja Bartsch, Zelda Becker, Lena Dung, Anna Sophie Feldmann, Vanessa Obermueller"
+date: today 
 format: html
+  pdf: 
+  size: a4
 editor: visual
+fontsize: 12pt
 ---
+**GitHub Repository:**git@github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git
+**Fuer die Abgabe aktueller GitHub Hash:**SOME_HASH
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
+## Code of Conduct 
+Wir verpflichten uns als Gruppe sorgfaelltig mit Feedback, unterschiedlichen Perspektiven und Meinungsverschiedenheiten umzugehen.
+Des Weiteren teilen wir die Aufgaben gleichmaeßig unter allen Autoren auf und verpflichten uns an vereinbarten Terminen teilzunehmen.
+Wir achten auf die Ehrlichkeit, Genauigkeit und Objektivitaet unserer Arbeit und erstellen keine Plagiate. Wir manipulieren keine Daten und vermeiden bzw. kennzeichnen Interessenskonflikte.
+Wir werden die Daten schuetzen und wahren die Vertraulichkeit.
+Bei einer Nutzung von AI Tools werden wir diese Kennzeichnen.
 
 
+#1 Einleitung
+
+#2 Methodik
+
+#3 Ergebnisse 
+
+#4 Diskussion
 
 
-Test 2 von Anna
-
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).

@@ -15,9 +15,10 @@ editor: visual
 fontsize: 12pt
 ---
 
-<!-- **GitHub Repository:**git\@github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git 
-**Fuer die Abgabe aktueller GitHub Hash:**  48ebcc7f7a0ab49c58ca314244116558e0c52551
--->
+**GitHub Repository:**
+https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git 
+**Fuer die Abgabe aktueller GitHub Hash:**  48ebcc7
+
 ## Code of Conduct
 
 Wir verpflichten uns als Gruppe sorgfaeltig mit Feedback, unterschiedlichen Perspektiven und Meinungsverschiedenheiten umzugehen. Des Weiteren teilen wir die Aufgaben gleichmaeßig unter allen Autoren auf und verpflichten uns an vereinbarten Terminen teilzunehmen. Wir achten auf die Ehrlichkeit, Genauigkeit und Objektivitaet unserer Arbeit und erstellen keine Plagiate. Wir manipulieren keine Daten und vermeiden bzw. kennzeichnen Interessenskonflikte. Wir werden die Daten schuetzen und wahren die Vertraulichkeit. Bei einer Nutzung von AI Tools werden wir diese Kennzeichnen.

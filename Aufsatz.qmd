@@ -5,7 +5,7 @@ author:
   - Zelda Becker
   - Lena Dung  
   - Anna Feldmann
-  - Vanessa Obermueller
+  - Vanessa Obermüller
 date: today 
 format: 
   html: 
@@ -21,12 +21,14 @@ https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git
 
 ## Code of Conduct
 
-Wir verpflichten uns als Gruppe sorgfaeltig mit Feedback, unterschiedlichen Perspektiven und Meinungsverschiedenheiten umzugehen. Des Weiteren teilen wir die Aufgaben gleichmaeßig unter allen Autoren auf und verpflichten uns an vereinbarten Terminen teilzunehmen. Wir achten auf die Ehrlichkeit, Genauigkeit und Objektivitaet unserer Arbeit und erstellen keine Plagiate. Wir manipulieren keine Daten und vermeiden bzw. kennzeichnen Interessenskonflikte. Wir werden die Daten schuetzen und wahren die Vertraulichkeit. Bei einer Nutzung von AI Tools werden wir diese Kennzeichnen.
+Wir verpflichten uns als Gruppe sorgfältig mit Feedback, unterschiedlichen Perspektiven und Meinungsverschiedenheiten umzugehen, in dem wir in Diskurs treten, einander zuhören und versuchen, gegensätzliche Meinungen zu verstehen. Des Weiteren teilen wir die Aufgaben gleichmäßig unter allen Autoren auf und verpflichten uns, an vereinbarten Terminen teilzunehmen. Durch eine Übersicht der eben genannten zu beachtenden Faktoren, auf die wir alle Zugriff haben, wird es uns möglich sein, auf einen Blick Termine und Aufgabenverteilungen zu sehen. Wir achten auf die Ehrlichkeit, Genauigkeit und Objektivität unserer Arbeit, indem wir verfasste Texte und Ergebnisse untereinander prüfen und uns gegebenenfalls auch Meinung von Dritten einholen, ohne vertrauliche Daten weiterzugeben und erstellen keine Plagiate. Letzteres überprüfen wir regelmäßig mit zuverlässigen Scannern für Plagiate. Wir manipulieren keine Daten. Dort beharren wir wieder auf gegenseitige Kontrolle. Wir werden die Daten schützen und wahren die Vertraulichkeit, indem Daten sicher gespeichert werden und vertrauliche Daten nicht an Dritte weitergegeben werden. Bei einer Nutzung von AI Tools werden wir diese kennzeichnen.
 
 # 1 Einleitung
 
-# 2 Methodik
+# 2 Literaturübersicht
 
-# 3 Ergebnisse
+# 3 Methodik
 
-# 4 Diskussion
+# 4 Ergebnisse
+
+# 5 Diskussion

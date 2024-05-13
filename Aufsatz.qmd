@@ -67,7 +67,6 @@ year = {2023},
 title = {Exploring the Use of Personalized AI for Identifying Misinformation on Social Media},
 publisher = {Association for Computing Machinery}
 
-
 author = {Urakami, Jacqueline and Kim, Yeongdae and Oura, Hiroki and Seaborn, Katie},
 year = {2022},
 title = {Finding Strategies Against Misinformation in Social Media: A Qualitative Study},

@@ -59,3 +59,4 @@ mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"])
 Jüngere Teilnehmer haben im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
 
 # 5 Diskussion
+Hallo

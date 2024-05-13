@@ -17,7 +17,7 @@ fontsize: 12pt
 
 **GitHub Repository:**
 https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git 
-**Fuer die Abgabe aktueller GitHub Hash:**  48ebcc7
+**Fuer die Abgabe aktueller GitHub Hash:**  2df1cb8
 
 ## Code of Conduct
 

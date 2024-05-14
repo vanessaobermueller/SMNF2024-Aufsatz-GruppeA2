@@ -1,5 +1,5 @@
 ---
-title: "Aufsatz"
+title: "Was sind Nutzendenanforderungen an KI als Werkzeug zur Detektion von Misinformation auf Social Media? Wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?"
 author: 
   - Kaja Bartsch 
   - Zelda Becker
@@ -14,15 +14,12 @@ format:
   pdf: default
 editor: visual
 fontsize: 12pt
+bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
+csl: "/Users/vanessa/Downloads/apa.csl"
+
 ---
 
-<<<<<<< HEAD
-**GitHub Repository:**
-https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git 
-**Fuer die Abgabe aktueller GitHub Hash:**  2df1cb8
-=======
 **GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 48ebcc7
->>>>>>> 15b492923ee5822f71a519f98b6a468cab467f24
 
 ## Code of Conduct
 
@@ -31,18 +28,16 @@ Wir verpflichten uns als Gruppe sorgfältig mit Feedback, unterschiedlichen Pers
 # 1 Einleitung
 
 # 2 Literaturübersicht
-In dem wissenschaftlichen Artikel “Fake news detection within online social media using supervised artificial intelligence algorithms” (Alatas, B & Ozbay, F.A,  2020), berichten die Autoren davon, dass soziale Medien viele Vorteile, so wie z.B. geringe Kosten, einen einfachen Zugang zu Informationen und die schnelle Ausbreitung dieser, bieten. Daher sind sie zu einer beliebten Variante geworden, um Informationen zu erhalten. Viele Menschen tendieren dazu, eher Soziale Medien als Ressource für Nachrichten zu benutzen, anstatt klassische Nachrichtenquellen. Diese Quellen sind jedoch nicht qualifiziert. 
-Im folgenden haben wir drei weitere Quellen betrachtet, welche sich mit dem Thema der Nutzung von Künstlicher Intelligenz als Detektion von Misinformationen beschäftigen.
 
-Mit dem Anstieg von sozialen Medien als Informationsquelle, häuft sich das Vorkommen von Misinformationen, wobei es vielen User:innen schwer fällt diese zu erkennen, sagt der Artikel “Finding Strategies Against Misinformation in Social Media: A Qualitative Study” (Urakani et al., 2022). Die Hauptprobleme der User:innen sind die Informationsflut, die Unterscheidung von richtigen und falschen Informationen und der negative Einfluss von Misinformationen auf die Emotionen. Es gibt auch einige Muster, die das Verhalten von User:innen repräsentieren, welche auf Misinformation treffen. Entweder werden diese ignoriert, es werden Freunde und Familie gewarnt, die Informationen überprüft und/oder die wichtigsten Informationen hervorgehoben. Generell kann man aber sagen, dass die meisten keine Strategie haben, wie sie mit Misinformationen umgehen oder diese überhaupt entdecken sollen. 
-Eine Hilfe dabei können KI-Tools sein. Diese können die falschen Informationen entweder entfernen oder weniger sichtbar machen. Das Entfernen nimmt dem/der User:in die Kontrolle über das, was er/sie potenziell lesen möchte/kann. Eine andere Möglichkeit wäre, Warnungen an die Informationen zu knüpfen, wobei hier das Problem entsteht, dass man noch mehr Aufmerksamkeit auf die Misinformationen lenkt. Abgesehen davon können KI-Tools aber dabei helfen, dass User:innen schneller die Wahrhaftigkeit und Glaubwürdigkeit von Informationen erkennen und die Fähigkeit entwickeln, Misinformationen herauszufiltern.
+In dem wissenschaftlichen Artikel “Fake news detection within online social media using supervised artificial intelligence algorithms” [@ozbay2020], berichten die Autoren davon, dass soziale Medien viele Vorteile, so wie z.B. geringe Kosten, einen einfachen Zugang zu Informationen und die schnelle Ausbreitung dieser, bieten. Daher sind sie zu einer beliebten Variante geworden, um Informationen zu erhalten. Viele Menschen tendieren dazu, eher Soziale Medien als Ressource für Nachrichten zu benutzen, anstatt klassische Nachrichtenquellen. Diese Quellen sind jedoch nicht qualifiziert. Im folgenden haben wir drei weitere Quellen betrachtet, welche sich mit dem Thema der Nutzung von Künstlicher Intelligenz als Detektion von Misinformationen beschäftigen. 
 
-Die Vorgehensweisen von Künstlicher Intelligenz sind aber laut dem Review “Fake news, disinformation and misinformation in social media: a review” (Aïmeur et al., 2023) noch nicht in der Lage, die Probleme von  Misinformation auf Social Media zu lösen. Insbesondere, da Beiträge mit Misinformation so gestaltet sind, dass sie der Wahrheit möglichst ähnlich sehen. Aus diesem Grund ist es für KI schwierig, diese ohne eine dritte Partei zu erkennen. Die Probleme können dabei in drei Kategorien geordnet werden: Content-based issues, contextual issues und issues of existing datasets. Hybrid-Techniken können dabei mehrere Probleme gleichzeitig betrachten, werden dadurch allerdings deutlich komplexer, sodass es schwierig werden kann, zu entscheiden, welche Informationen aus welchem Bereich relevant sind. Zu analysieren, wie Quellen und Verbreiter von Fake News über verschiedene Plattformen arbeiten, ist dabei essentiell, um Misinformation zu erkennen.
+Mit dem Anstieg von sozialen Medien als Informationsquelle, häuft sich das Vorkommen von Misinformationen, wobei es vielen User:innen schwer fällt diese zu erkennen, sagt der Artikel “Finding Strategies Against Misinformation in Social Media: A Qualitative Study” [@urakami2022]. Die Hauptprobleme der User:innen sind die Informationsflut, die Unterscheidung von richtigen und falschen Informationen und der negative Einfluss von Misinformationen auf die Emotionen. Es gibt auch einige Muster, die das Verhalten von User:innen repräsentieren, welche auf Misinformation treffen. Entweder werden diese ignoriert, es werden Freunde und Familie gewarnt, die Informationen überprüft und/oder die wichtigsten Informationen hervorgehoben. Generell kann man aber sagen, dass die meisten keine Strategie haben, wie sie mit Misinformationen umgehen oder diese überhaupt entdecken sollen. Eine Hilfe dabei können KI-Tools sein. Diese können die falschen Informationen entweder entfernen oder weniger sichtbar machen. Das Entfernen nimmt dem/der User:in die Kontrolle über das, was er/sie potenziell lesen möchte/kann. Eine andere Möglichkeit wäre, Warnungen an die Informationen zu knüpfen, wobei hier das Problem entsteht, dass man noch mehr Aufmerksamkeit auf die Misinformationen lenkt. Abgesehen davon können KI-Tools aber dabei helfen, dass User:innen schneller die Wahrhaftigkeit und Glaubwürdigkeit von Informationen erkennen und die Fähigkeit entwickeln, Misinformationen herauszufiltern.
 
-Der letzte von uns betrachtete research article “Exploring the Use of personalized AI for identifying misinformation on social media” (Jahanbakhsh, F et al., 2023) untersucht die Kombination von subjektiven Einschätzungen von User:innen und Künstlicher Intelligenz zur Identifikation von Misinformation auf Social Media Plattformen. Die Autoren argumentieren, dass herkömmliche Ansätze zur Bekämpfung von Misinformationen aufgrund der Dynamik der sozialen Medienlandschaft unzureichend sind. Bei dem Ansatz der personalisierten KI interagiert diese mit den Teilnehmer:innen, lernt und analysiert Twitter-Feeds und versucht, eine Beurteilung vorherzusagen, welche an User:innen individuell angepasst ist. Die Diskussion betrachtet sowohl ihr Potential, äußert aber auch Bedenken. Dabei werden zu beachtende ethische Aspekte der Personalisierung und Umsetzungsmöglichkeiten beleuchtet. Des Weiteren werden Personalisierung und Zentralisierung solcher KI-Tools gegenübergestellt und Fragen über das Ausmaß der Transparenz der Entscheidung und Autonomie der User:innen aufgeworfen, sowohl als auch die Fähigkeit der User:innen, Misinformation im Rahmen des Lernprozesses zu erkennen und die Gefahren von Filterblasen. Die Ergebnisse zeigen Fortschritte in dem Gebiet der Bekämpfung von Misinformation, die Autoren betonen jedoch die große Notwendigkeit weiterer Forschung auf diesem Gebiet. (Jahanbakhsh, F et al., 2023)
+Die Vorgehensweisen von Künstlicher Intelligenz sind aber laut dem Review “Fake news, disinformation and misinformation in social media: a review” [@aimeur2023] noch nicht in der Lage, die Probleme von Misinformation auf Social Media zu lösen. Insbesondere, da Beiträge mit Misinformation so gestaltet sind, dass sie der Wahrheit möglichst ähnlich sehen. Aus diesem Grund ist es für KI schwierig, diese ohne eine dritte Partei zu erkennen. Die Probleme können dabei in drei Kategorien geordnet werden: Content-based issues, contextual issues und issues of existing datasets. Hybrid-Techniken können dabei mehrere Probleme gleichzeitig betrachten, werden dadurch allerdings deutlich komplexer, sodass es schwierig werden kann, zu entscheiden, welche Informationen aus welchem Bereich relevant sind. Zu analysieren, wie Quellen und Verbreiter von Fake News über verschiedene Plattformen arbeiten, ist dabei essentiell, um Misinformation zu erkennen.
+
+[@jahanbakhsh2023] untersucht die Kombination von subjektiven Einschätzungen von User:innen und Künstlicher Intelligenz zur Identifikation von Misinformation auf Social Media Plattformen. Die Autoren argumentieren, dass herkömmliche Ansätze zur Bekämpfung von Misinformationen aufgrund der Dynamik der sozialen Medienlandschaft unzureichend sind. Bei dem Ansatz der personalisierten KI interagiert diese mit den Teilnehmer:innen, lernt und analysiert Twitter-Feeds und versucht, eine Beurteilung vorherzusagen, welche an User:innen individuell angepasst ist. Die Diskussion betrachtet sowohl ihr Potential, äußert aber auch Bedenken. Dabei werden zu beachtende ethische Aspekte der Personalisierung und Umsetzungsmöglichkeiten beleuchtet. Des Weiteren werden Personalisierung und Zentralisierung solcher KI-Tools gegenübergestellt und Fragen über das Ausmaß der Transparenz der Entscheidung und Autonomie der User:innen aufgeworfen, sowohl als auch die Fähigkeit der User:innen, Misinformation im Rahmen des Lernprozesses zu erkennen und die Gefahren von Filterblasen. Die Ergebnisse zeigen Fortschritte in dem Gebiet der Bekämpfung von Misinformation, die Autoren betonen jedoch die große Notwendigkeit weiterer Forschung auf diesem Gebiet. 
 
 Zusammenfassend sieht man, dass es viele verschiedene Perspektiven zu dem Thema der Nutzung von KI zur Entdeckung von Misinformationen gibt. Zum einen könnten KI-Tools helfen, Misinformationen zu erkennen und gegen diese vorzugehen, jedoch sind diese aktuell oft noch nicht in der Lage diese sicher zu erkennen. Für unser Thema, also die Nutzungsanforderungen an entsprechende KI sind diese Artikel relevant, da sie mögliche Problemstellungen aufzeigen. Im ersten Artikel werden die aktuellen Probleme von Nutzern und der Erkennung von Misinformationen thematisiert, was wichtig ist, um diese Probleme beim Einsatz von KI vermeiden zu können. Damit die KI glaubwürdig auf die Nutzer wirkt, muss sie die Informationen richtig einstufen. Mit den Problemen die dabei entstehen, beschäftigt sich der zweite Artikel. Auch die Personalisierung ist ein wichtiges Thema, damit Nutzer gerne mit einem System arbeiten, welches der dritte Artikel aufgreift und problematisiert, wie mit Transparenz und Autonomie ethisch korrekt umgegangen werden kann.
-
 
 # 3 Methodik
 
@@ -56,24 +51,10 @@ mean_ati_young <- mean(ati[ati$age < mean_age,"ati_mean"])
 mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"]) 
 
 ```
+
 Jüngere Teilnehmer haben im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
 
 # 5 Diskussion
 
-# 6 Literaturverzeichnis
-
-author = {Jahanbakhsh, Farnaz and Katsis, Yannis and Wang, Dakuo and Popa, Lucian and Muller, Michael},
-year = {2023},
-title = {Exploring the Use of Personalized AI for Identifying Misinformation on Social Media},
-publisher = {Association for Computing Machinery}
-
-author = {Urakami, Jacqueline and Kim, Yeongdae and Oura, Hiroki and Seaborn, Katie},
-year = {2022},
-title = {Finding Strategies Against Misinformation in Social Media: A Qualitative Study},
-publisher = {Association for Computing Machinery}
-
-author = {Esma Aïmeurl, Sabrine Amri1, Gilles Brassard},
-year = {2023},
-title = {Fake news, disinformation and misinformation in social media: a review}
-
+# 6 Literaturübersicht
 

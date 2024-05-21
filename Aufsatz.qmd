@@ -15,7 +15,7 @@ format:
 editor: visual
 fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
-csl: "apa.csl"
+csl: "apa (1).csl"
 
 ---
 

@@ -15,7 +15,7 @@ format:
 editor: visual
 fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
-csl: "/Users/vanessa/Downloads/apa.csl"
+csl: "apa.csl"
 
 ---
 
@@ -44,7 +44,7 @@ Zusammenfassend sieht man, dass es viele verschiedene Perspektiven zu dem Thema 
 # 4 Ergebnisse
 
 ```{r code, echo = FALSE}
-ati <- read.csv("/Users/vanessa/Desktop/ATI-MTurk-Data/mturk_data.csv", header = TRUE ,)
+ati <- read.csv("mturk_data.csv", header = TRUE ,)
 mean_age <- mean(ati$age)
 mean_ati_young <- mean(ati[ati$age < mean_age,"ati_mean"])
 

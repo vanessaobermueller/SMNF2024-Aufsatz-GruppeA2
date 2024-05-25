@@ -18,7 +18,7 @@ bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541
 csl: "apa (1).csl"
 ---
 
-**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** db17a1d
+**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** d686a6d
 
 ## Code of Conduct
 
@@ -56,7 +56,6 @@ mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"])
 Jüngere Teilnehmer haben im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
 
 # 4.1 Qualitative Ergebnisse
-Thematische Analyse 
 Aus der thematischen Analyse der Transkripte ergeben sich folgende Themen, die relevant für unsere Forschungsfrage sind: Misinformationen, Eigenschaften, Grenzen, Verantwortung und Transparenz.
 
 | Name  | Definition | Beleg |

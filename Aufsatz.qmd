@@ -55,7 +55,8 @@ mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"])
 
 Jüngere Teilnehmer haben im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
 
-# 4.1 Qualitative Ergebnisse
+
+## 4.1 Qualitative Ergebnisse
 Aus der thematischen Analyse der Transkripte ergeben sich folgende Themen, die relevant für unsere Forschungsfrage sind: Misinformationen, Eigenschaften, Grenzen, Verantwortung und Transparenz.
 
 | Name  | Definition | Beleg |
@@ -72,7 +73,33 @@ Es wurden auch einige kritische Gedanken geäußert, die im Thema „Grenzen und
 Zum Thema „Verantwortung für das KI-Tool“ wäre die optimale Lösung, dass es eine dritte, unabhängige Partei gäbe, die keinen Nutzen von Verbreitung oder Verbergung von Informationen hat. Da dies aber unrealistisch erscheint, läge die Verantwortung wohl bei den Social Media Seiten, wobei auch der Gedanke geäußert wurde, dass es Richtlinien vom Staat geben soll, an die sich die Social Media Seiten halten müssen. 
 Als letztes geht es noch um das Thema „Transparenz des KI-Tools“. Man soll auf jeden Fall die Entscheidungen bzw. Beurteilungen der KI einsehen und nachvollziehen können und die Quellen, auf die sich die KI bezieht, überprüfen können. Außerdem seien Quelloffenheit des Codes und Transparenz im Datensatz, mit der die KI trainiert wird, wichtig.
 
+## 4.2 Quantitative Ergebnisse 
+@fig-codeati stellt den Zusammenhang zwischen ATI-1 und ATI-2 dar. 
+
+```{r}
+#| echo: false
+#| message: false
+#| fig-cap: "Zusammenhang zwischen ATI-1 und ATI-2"
+#| label: fig-codeati
+
+library(ggplot2)
+library(tidyverse)
+
+daten <- read.csv("mturk_data.csv")
+ggplot(daten, aes(x = ati01, y = ati02)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, fullrange = TRUE)+
+  scale_x_continuous(limits = c(1,6), breaks = seq(1,6,1)) +
+  scale_y_continuous(limits = c(1,6), breaks = seq(1,6,1))  
+ 
+  
+```
+
 
 # 5 Diskussion
 
-# 6 Literaturübersicht
+## 6 Literaturverzeichnis
+<div id = "refs" ></div>
+
+## 7 Anhänge 
+

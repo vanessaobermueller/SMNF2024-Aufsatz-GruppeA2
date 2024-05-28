@@ -98,8 +98,24 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
 
 # 5 Diskussion
 
-## 6 Literaturverzeichnis
+# 6 Literaturverzeichnis
 <div id = "refs" ></div>
 
-## 7 Anhänge 
+# 7 Anhänge
+## Anhang 1 - Rekrutierungstext
 
+Hallo zusammen!
+
+Falschinformationen sind weit verbreitet und jeder ist mit Ihnen tagtäglich konfrontiert.\
+In unserer Fragenbogenstudie testest du ein KI Werkzeugs (Künstliche Intelligenz), welches dir hilft irreführende Informationen im Internet zu erkennen.\
+Die Studie dauert ca. 30 - 45 Minuten und kann einfach vom Laptop / Tablet / PC online durchgeführt werden.\
+Medieninformatik- und Psychologie-Studierende der Universität Lübeck erhalten für die Teilnahme 0,5 VP Stunden.\ 
+
+Unsere Einschlusskriterien sind
+
+-	Mindestens 18 Jahre alt 
+
+-	Gute Deutschkenntnisse
+
+Der Link zur Teilnahme: insert Link lol\
+Wir freuen uns auf deine Teilnahme!

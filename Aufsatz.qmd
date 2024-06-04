@@ -18,7 +18,7 @@ bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541
 csl: "apa (1).csl"
 ---
 
-**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** d686a6d
+**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** f067746
 
 ## Code of Conduct
 

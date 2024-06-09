@@ -47,14 +47,14 @@ Um die erhobenen Daten zu analysieren, haben wir das Verfahren der Thematischen 
 
 A1: Leitfaden zum Interview 
 
-![Diagramm zur Veranschaulichung des Studienablaufs:](Qualitativ_Methodenteil_Diagramm.png)
+![Diagramm zur Veranschaulichung des Studienablaufs: ](Qualitativ_Methodenteil_Diagramm.png)
 
 ## 3.2 Quantitative Methode 
 ### 3.2.1 Ablauf der Datenerhebung
 
 Die Datenerhebung für die quantitative Methode fand vom Dienstag, den 28. Mai, bis zum Montag, den 10. Juni, statt. Die Teilnehmenden wurden über die Umfrage informiert und erhielten einen Link zur Umfrage, die sie selbstständig innerhalb dieses zweiwöchigen Zeitraums durchführen konnten. Das Studiendesign unserer Forschung ist eine Fragebogenstudie mit einer Dauer von 30 Minuten, die durch die Verwendung von Skalen unterstützt wird. Die Studie gliedert sich in drei Abschnitte. Im ersten Abschnitt werden Fragen zur Person der Teilnehmenden gestellt, um demografische und persönliche Informationen zu erfassen. Im zweiten Abschnitt testen die Teilnehmenden die Anwendung, indem ihnen eine Auswahl an fiktiven Social-Media-Posts angezeigt wird. Dabei sollen sie mithilfe der Anwendung bewerten, ob es sich bei den Posts um falsche oder irreführende Informationen handelt. Im abschließenden dritten Abschnitt beantworten die Teilnehmenden Fragen zu ihrer Einschätzung und Bewertung der Anwendung, um deren Feedback und Erfahrungen zu erfassen. 
 
-![Dieses Diagramm veranschaulicht den Ablauf der Onlineumfrage:](Quantitativ_Methodenteil_Diagramm.png)
+![Diagramm zur Veranschaulichungden des Ablaufs der Onlineumfrage: ](Quantitativ_Methodenteil_Diagramm.png)
 
 ### 3.2.2 Beschreibung der Teilnehmenden 
 

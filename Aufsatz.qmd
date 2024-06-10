@@ -125,11 +125,12 @@ Als letztes geht es noch um das Thema „Transparenz des KI-Tools“. Man soll a
 
 @fig-codeati stellt den Zusammenhang zwischen ATI-1 und ATI-2 dar.
 
-```{r}
+```{r }
 #| echo: false
 #| message: false
 #| fig-cap: "Zusammenhang zwischen ATI-1 und ATI-2"
 #| label: fig-codeati
+
 
 library(ggplot2)
 library(tidyverse)
@@ -148,8 +149,8 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
 
 # 6 Literaturverzeichnis
 
-::: {#refs}
-:::
+<div id="refs"></div>
+
 
 # 7 Anhänge
 
@@ -157,10 +158,10 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
 
 Hallo zusammen!
 
-Falschinformationen sind weit verbreitet und jeder ist mit Ihnen tagtäglich konfrontiert.\
-In unserer Fragenbogenstudie testest du ein KI Werkzeugs (Künstliche Intelligenz), welches dir hilft irreführende Informationen im Internet zu erkennen.\
-Die Studie dauert ca. 30 - 45 Minuten und kann einfach vom Laptop / Tablet / PC online durchgeführt werden.\
-Medieninformatik- und Psychologie-Studierende der Universität Lübeck erhalten für die Teilnahme 0,5 VP Stunden. 
+Falschinformationen sind weit verbreitet und jeder ist mit Ihnen tagtäglich konfrontiert.
+In unserer Fragenbogenstudie testest du ein KI Werkzeug (Künstliche Intelligenz), welches dir hilft irreführende Informationen im Internet zu erkennen.
+Die Studie dauert ca. 30 - 45 Minuten und kann einfach vom Laptop / Tablet / PC online durchgeführt werden.
+Medieninformatik- und Psychologie-Studierende der Universität Lübeck erhalten für die Teilnahme 0,5 VP Stunden.
 
 Unsere Einschlusskriterien sind
 
@@ -168,5 +169,4 @@ Unsere Einschlusskriterien sind
 
 -   Gute Deutschkenntnisse
 
-Der Link zur Teilnahme:https://survey.imis.uni-luebeck.de/index.php/survey/index/sid/758729/newtest/Y/lang/de?groupId=A2 \
 Wir freuen uns auf deine Teilnahme!

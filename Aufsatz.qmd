@@ -18,7 +18,7 @@ bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541
 csl: "apa (1).csl"
 ---
 
-**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** f067746
+**GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 8b25396
 
 ## Code of Conduct
 
@@ -144,6 +144,67 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
  
   
 ```
+
+## 4.3 Stichprobe
+
+## 4.4 Deskriptive Statistik 
+
+```{r}
+
+library(dplyr)
+library(tidyr)
+
+ergebnissurvey <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/surveydata.csv")
+
+ergebnisapp <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/appdata.csv")
+
+ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
+  mutate(first_variant = first(variant))
+
+ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
+  mutate(correct_eval = ifelse(user_decision == correct_decision, 1, 0))
+
+appdatasummarize <- ergebnisapp %>% group_by(user_id, variant) %>%
+  summarize(mean_interactions = mean(number_of_interactions),
+            precision = mean(correct_eval),
+            first_variant = first(first_variant)) %>%
+  pivot_wider(names_from = variant, values_from = c(mean_interactions, precision))
+
+appdatasummarize_unique <- appdatasummarize %>%
+  group_by(user_id) %>%
+  summarize(across(everything(), first))
+
+print(appdatasummarize_unique)
+
+ergebnissurvey <- ergebnissurvey %>% left_join(appdatasummarize_unique, by = c("userId" = "user_id" ))
+
+keys <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","ATI.8.","-ATI.9."))
+scored <- psych::scoreItems(keys, ergebnissurvey)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+
+ergebnissurvey <- ergebnissurvey %>% mutate(HTC_E = ifelse(first_variant == "eva-ai", HTC_1, HTC_2))
+
+
+
+#print(names(ergebnissurvey))
+#print(names(ergebnisapp))
+
+gefilterte_daten <- ergebnissurvey %>%
+  filter(age > 18 & age < 120 & groupId != "42")
+#müssen noch danach filtern ob Leute den Fragebogen abgebrochen haben 
+
+
+#datengesamt <- gefilterte_daten %>%
+ # full_join(ergebnisapp, by =  c("userId" = "user_id"))
+
+#datengesamt %>%
+ # select(starts_with("ATI")) %>%
+  #psych::alpha(check.keys = TRUE)
+```
+
+
+## 4.5 Inferenzstatistik
+
 
 # 5 Diskussion
 

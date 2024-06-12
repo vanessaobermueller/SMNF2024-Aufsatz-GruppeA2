@@ -153,13 +153,14 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
 
 library(dplyr)
 library(tidyr)
+library(psych)
 
 ergebnissurvey <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/surveydata.csv")
 
 ergebnisapp <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/appdata.csv")
 
 ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
-  mutate(first_variant = first(variant))
+    mutate(first_variant = first(variant))
 
 ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
   mutate(correct_eval = ifelse(user_decision == correct_decision, 1, 0))
@@ -178,11 +179,30 @@ print(appdatasummarize_unique)
 
 ergebnissurvey <- ergebnissurvey %>% left_join(appdatasummarize_unique, by = c("userId" = "user_id" ))
 
-keys <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","ATI.8.","-ATI.9."))
-scored <- psych::scoreItems(keys, ergebnissurvey)
-ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+keys_ATI <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","ATI.8.","-ATI.9."))
 
-ergebnissurvey <- ergebnissurvey %>% mutate(HTC_E = ifelse(first_variant == "eva-ai", HTC_1, HTC_2))
+
+keys_HCT1 <- list(HCTT1 = c("HCT1T.01.","HCT1T.02.","HCT1T.03.","HCT1T.04.","HCT1T.05." ))
+keys_HCT2 <- list(HCTT2 = c("HCT2T.01.","HCT2T.02.","HCT2T.03.","HCT2T.04.","HCT2T.05." ))
+
+keys_SUS1 <- list(SUS1 = c("SUS.1.","SUS.2.", "SUS.3.", "SUS.4.", "SUS.5.", "SUS.6.", "SUS.7.", "SUS.8.", "SUS.9.", "SUS.10."))
+keys_SUS2 <- list(SUS2 = c("SUS.1.","SUS.2.", "SUS.3.", "SUS.4.", "SUS.5.", "SUS.6.", "SUS.7.", "SUS.8.", "SUS.9.", "SUS.10."))
+
+
+scored_ATI <- psych::scoreItems(keys_ATI, ergebnissurvey)
+scored_HCT1 <- psych::scoreItems(keys_HCT1, ergebnissurvey)
+scored_HCT2 <- psych::scoreItems(keys_HCT2, ergebnissurvey)
+scored_SUS1 <- psych::scoreItems(keys_SUS1, ergebnissurvey)
+scored_SUS2 <- psych::scoreItems(keys_SUS2, ergebnissurvey)
+
+ergebnissurvey <- ergebnissurvey %>% cbind(scored_ATI$scores)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored_HCT1$scores)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored_HCT2$scores)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored_SUS1$scores)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored_SUS2$scores)
+
+ergebnissurvey <- ergebnissurvey %>% mutate(HCT_E = ifelse(first_variant == "eva-ai", keys_HCT1, keys_HCT2 ))
+ergebnissurvey <- ergebnissurvey %>% mutate(SUS_E = ifelse(first_variant == "eva-ai", keys_SUS1, keys_SUS2 ))
 
 
 

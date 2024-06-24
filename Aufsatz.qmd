@@ -15,10 +15,14 @@ format:
 editor: visual
 fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
-csl: "apa (1).csl"
 ---
 
 **GitHub Repository:** https:\\github.com:vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 8b25396
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
 
 ## Code of Conduct
 
@@ -56,13 +60,11 @@ A1: Leitfaden zum Interview
 
 ### 3.2.1 Ablauf der Datenerhebung
 
-
 Die Datenerhebung für die quantitative Methode fand vom Dienstag, den 28. Mai, bis zum Montag, den 10. Juni, statt. Die Teilnehmenden wurden über die Umfrage informiert und erhielten einen Link zur Umfrage, die sie selbstständig innerhalb dieses zweiwöchigen Zeitraums durchführen konnten. Das Studiendesign unserer Forschung ist eine Fragebogenstudie mit einer Dauer von 30 Minuten, die durch die Verwendung von Skalen unterstützt wird. Die Studie gliedert sich in drei Abschnitte.
 
-![Diagramm zur Veranschaulichungden des Ablaufs der Onlineumfrage](Quantitativ_Methodenteil_Diagramm.png) 
+![Diagramm zur Veranschaulichungden des Ablaufs der Onlineumfrage](Quantitativ_Methodenteil_Diagramm.png)
 
 Im ersten Abschnitt werden Fragen zur Person der Teilnehmenden gestellt, um demografische und persönliche Informationen zu erfassen. Im zweiten Abschnitt testen die Teilnehmenden die Anwendung, indem ihnen eine Auswahl an fiktiven Social-Media-Posts angezeigt wird. Dabei sollen sie mithilfe der Anwendung bewerten, ob es sich bei den Posts um falsche oder irreführende Informationen handelt. Im abschließenden dritten Abschnitt beantworten die Teilnehmenden Fragen zu ihrer Einschätzung und Bewertung der Anwendung, um deren Feedback und Erfahrungen zu erfassen.
-
 
 ### 3.2.2 Beschreibung der Teilnehmenden
 
@@ -74,30 +76,79 @@ Die Zustimmung zur Verarbeitung ihrer Daten ist ein essenzielles Kriterium, um d
 
 ### 3.2.3 Gewählte Methoden
 
-Die gewählte Methode für die Onlineumfrage ist die Verwendung von Skalen. Dabei werden verschiedene Skalenniveaus angewendet, um unterschiedliche Arten von Daten zu erfassen. Nominale Daten lassen sich nicht in eine Rangfolge bringen. Dies bedeutet, dass wir nicht sagen können, ob ein Wert besser oder schlechter als ein anderer ist, sondern lediglich, ob es einen Unterschied gibt. Nominale Daten geben uns Informationen über die Häufigkeit bestimmter Merkmale. In unserer Umfrage wird das nominale Skalenniveau für das Geschlecht der Teilnehmenden verwendet, wobei die Kategorien "Männlich" und "Weiblich" erfasst werden. Ordinalskalierte Daten können wir in eine Rangfolge bringen, jedoch können wir keine genauen Aussagen über die Abstände zwischen den Werten machen. Wir können feststellen, welche Werte höher oder niedriger sind, aber nicht, wie viel höher oder niedriger sie sind. Ordinale Daten geben uns Informationen über die Häufigkeit und die Rangfolge bestimmter Merkmale. 
+Die gewählte Methode für die Onlineumfrage ist die Verwendung von Skalen. Dabei werden verschiedene Skalenniveaus angewendet, um unterschiedliche Arten von Daten zu erfassen. Nominale Daten lassen sich nicht in eine Rangfolge bringen. Dies bedeutet, dass wir nicht sagen können, ob ein Wert besser oder schlechter als ein anderer ist, sondern lediglich, ob es einen Unterschied gibt. Nominale Daten geben uns Informationen über die Häufigkeit bestimmter Merkmale. In unserer Umfrage wird das nominale Skalenniveau für das Geschlecht der Teilnehmenden verwendet, wobei die Kategorien "Männlich" und "Weiblich" erfasst werden. Ordinalskalierte Daten können wir in eine Rangfolge bringen, jedoch können wir keine genauen Aussagen über die Abstände zwischen den Werten machen. Wir können feststellen, welche Werte höher oder niedriger sind, aber nicht, wie viel höher oder niedriger sie sind. Ordinale Daten geben uns Informationen über die Häufigkeit und die Rangfolge bestimmter Merkmale.
 
-In unserer Umfrage werden der höchste allgemeinbildenden Schulabschluss und der höchste berufliche Abschluss auf ordinaler Basis erfasst, da sie eine Reihenfolge haben, aber keine genauen Abstände zwischen den Abschlüssen angegeben sind. Für den schulischen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Hauptschulabschluss", "Realschulabschluss", "Abitur". Für den beruflichen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Lehre/Ausbildung", "Fachschule", "Universität/Hochschule". Für metrische Daten können wir eine Rangfolge erstellen und die Abstände zwischen den Werten sind klar definiert. Metrische Daten ermöglichen uns, sowohl die Häufigkeit als auch die Rangfolge und den genauen Abstand zwischen den Werten zu bestimmen. 
+In unserer Umfrage werden der höchste allgemeinbildenden Schulabschluss und der höchste berufliche Abschluss auf ordinaler Basis erfasst, da sie eine Reihenfolge haben, aber keine genauen Abstände zwischen den Abschlüssen angegeben sind. Für den schulischen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Hauptschulabschluss", "Realschulabschluss", "Abitur". Für den beruflichen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Lehre/Ausbildung", "Fachschule", "Universität/Hochschule". Für metrische Daten können wir eine Rangfolge erstellen und die Abstände zwischen den Werten sind klar definiert. Metrische Daten ermöglichen uns, sowohl die Häufigkeit als auch die Rangfolge und den genauen Abstand zwischen den Werten zu bestimmen.
 
 Im Pre-test-Fragebogen und in beiden Post-test Fragebögen erfolgt die Abfrage mithilfe eines metrischen Skalenniveaus und einer sechsstufigen Likert-Skala. Die Teilnehmenden werden gebeten, ihre Zustimmung zu Aussagen auf einer Skala von "Stimmt gar nicht" über "Stimmt weitgehend nicht" und "Stimmt eher nicht" bis "Stimmt eher", "Stimmt weitgehend" und schließlich "Stimmt völlig" einzuschätzen. Die Likert-Skala ermöglicht eine differenzierte Bewertung, indem sie den Grad der Übereinstimmung oder Ablehnung mit den Aussagen bestimmt.
 
 ### 3.2.4 Analysemethode
 
-Ausgewählte Variablen für unsere Onlineumfrage sind folgende. Variablen für den Pre-test Fragebogen sind Soziodemographische Daten wie Alter, Geschlecht, Bildungsgrad. Ebenfalls Daten zu der Persönlichkeit der Teilnehmenden, die Einstellung zu Technik, zu den Nutzungsgewohnheiten in den sozialen Medien und zu der Vorerfahrung mit KI. Variablen für die System-Evaluation sind Erfolg, Anzahl der Interaktionen und Time-on-Task. Diese Daten dienen der Bewertung der Posts und fassen die Interaktion mit der Anwendung zusammen. Die Variablen für die Post-test Fragebogen sind Usability, User Experience, Subjektives Bewusstsein für die Informationsverarbeitung und Vertrauen in das System. Dies sind Daten zu der Bewertung der Anwendung. 
+Ausgewählte Variablen für unsere Onlineumfrage sind folgende. Variablen für den Pre-test Fragebogen sind Soziodemographische Daten wie Alter, Geschlecht, Bildungsgrad. Ebenfalls Daten zu der Persönlichkeit der Teilnehmenden, die Einstellung zu Technik, zu den Nutzungsgewohnheiten in den sozialen Medien und zu der Vorerfahrung mit KI. Variablen für die System-Evaluation sind Erfolg, Anzahl der Interaktionen und Time-on-Task. Diese Daten dienen der Bewertung der Posts und fassen die Interaktion mit der Anwendung zusammen. Die Variablen für die Post-test Fragebogen sind Usability, User Experience, Subjektives Bewusstsein für die Informationsverarbeitung und Vertrauen in das System. Dies sind Daten zu der Bewertung der Anwendung.
 
 Nach der Auswertung der Onlineumfragen werden quantitative Analysemethoden verwendet, darunter statistische Verfahren wie t-Test und Korrelation. Diese Methoden dienen der Untersuchung von den ausgewählten Variablen, um fundierte Erkenntnisse aus den Umfragedaten zu gewinnen. Der t-Test stellt fest, ob es einen signifikanten Unterschied zwischen den Mittelwerten von zwei Gruppen gibt. Die Korrelation hingegen misst den Zusammenhang zwischen zwei Variablen und zeigt, in welchem Ausmaß sich Veränderungen einer Variable auf die andere Variable auswirkt. Beide Methoden werden somit verwendet, um Beziehungen und Muster in den Daten rauszufiltern und zu analysieren. Somit können Hypothesen bestätigt oder widerlegt werden und dadurch können Entscheidungen über den weiteren Verlauf der Studie getroffen werden.
 
 # 4 Ergebnisse
 
-```{r code, echo = FALSE}
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Zusammenhang zwischen Personen unter und über dem Durchschnittsalter und dem gemessenen ATI-Score "
+#| label: fig-durchschnittati
+
+library(ggplot2)
+library(tidyverse)
+
 ati <- read.csv("mturk_data.csv", header = TRUE ,)
 mean_age <- mean(ati$age)
 mean_ati_young <- mean(ati[ati$age < mean_age,"ati_mean"])
 
 mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"]) 
 
+# Daten für den Plot vorbereiten
+plot_data <- data.frame(
+  Gruppe = c("Jünger als Durchschnitt", "Älter als Durchschnitt"),
+  ATI_Mean = c(mean_ati_young, mean_ati_old)
+)
+
+# Barplot erstellen
+ggplot(plot_data, aes(x = Gruppe, y = ATI_Mean, fill = Gruppe)) +
+  geom_bar(stat = "identity") +
+  labs(
+       x = "",
+       y = "Durchschnittlicher ATI-Score") +
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set2")
+
 ```
 
-Jüngere Teilnehmer haben im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
+@fig-durchschnittati zeigt, dass Jüngere Teilnehmer im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer besitzen, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Zusammenhang zwischen dem Alter und dem gemessenen ATI-Score"
+#| label: fig-alterati
+
+# Pakete laden
+library(ggplot2)
+library(dplyr)
+
+# Daten einlesen
+ati <- read.csv("mturk_data.csv", header = TRUE)
+
+# Scatterplot erstellen
+ggplot(ati, aes(x = age, y = ati_mean)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", color = "orange", se = FALSE) +
+  labs(
+       x = "Alter",
+       y = "ATI-Score") +
+  theme_minimal()
+```
+
 
 ## 4.1 Qualitative Ergebnisse
 
@@ -111,13 +162,13 @@ Aus der thematischen Analyse der Transkripte ergeben sich folgende Themen, die r
 | Verantwortung für das KI-Tool     | Partie, die sich um Durchführung kümmert                                                      | „Irgendein Medium, dass keinen Vorteil hat, wenn Misinfromationen verbreitet werden, also neutral dem gegenübersteht.“ (A2_5, Zeile 97-98) „Ich denke die Verantwortung hat a uf jeden Fall die Social Media Seite.“ (A2_4, Zeile 150-151)                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Transparenz des KI-Tools          | Beurteilungen des KI-Tools nachvollziehen können                                              | „Bei einem transparenten KI-Tool ist es wichtig, welche Daten verwendet werden, um das neutrale Netz zu trainieren und welche Quellen die KI als seriöse Quellen wertet.“ (A2_5, Zeile 105-107) „Ich finde es sollte Optionen geben, vielleicht könnte es einfach die Informationen sozusagen liefern und dann auch noch Optionen geben, dass man sozusagen den Gedankengang, also auch wenn KIs keinen Gedankengang haben, aber den Gedankengang dahinter noch mal, um den nachvollziehen zu können.“ (A2_3, Zeile 104-108)                                                                                                                                 |
 
-Bei dem Thema „Misinformationen auf Social Media“ geht es darum, ob die Befragten ein KI-Tool dieser Art überhaupt als notwendig erachten. Alle Befragten haben angegeben, schon mal in Kontakt mit Misinformationen geraten zu sein. Außerdem wäre so ein System laut ihnen hilfreich und könne bis zu einem gewissen Grad definitiv dabei helfen, das Problem von Verbreitung von Misinformationen anzugehen. Wie man das System gestalten sollte, dass es den Anforderungen der Nutzenden entspricht, wird mit dem Thema „Eigenschaften des KI-Tools“ beschrieben. Höchste Priorität hatte bei den Befragten die Zuverlässigkeit des Systems. Es muss neutrale, faktenbasierte Entscheidungen treffen können und mit seriösen Quellen arbeiten. Am wichtigsten sei es, dass das System keine richtigen Informationen als falsch markiert und dass es sowohl Bild, Video, Audio und Text prüft, um ein bestmögliches Ergebnis zu liefern. 
+Bei dem Thema „Misinformationen auf Social Media“ geht es darum, ob die Befragten ein KI-Tool dieser Art überhaupt als notwendig erachten. Alle Befragten haben angegeben, schon mal in Kontakt mit Misinformationen geraten zu sein. Außerdem wäre so ein System laut ihnen hilfreich und könne bis zu einem gewissen Grad definitiv dabei helfen, das Problem von Verbreitung von Misinformationen anzugehen. Wie man das System gestalten sollte, dass es den Anforderungen der Nutzenden entspricht, wird mit dem Thema „Eigenschaften des KI-Tools“ beschrieben. Höchste Priorität hatte bei den Befragten die Zuverlässigkeit des Systems. Es muss neutrale, faktenbasierte Entscheidungen treffen können und mit seriösen Quellen arbeiten. Am wichtigsten sei es, dass das System keine richtigen Informationen als falsch markiert und dass es sowohl Bild, Video, Audio und Text prüft, um ein bestmögliches Ergebnis zu liefern.
 
-Wenn es um die direkte Nutzung geht, hatten mehrere Befragte die Vorstellung, dass die entsprechenden Posts mit einer Art Icon versehen werden, sodass man weiß, dass dieser Post Misinformationen enthält. Klickt man auf das Icon, wäre es optimal, wenn man noch mehr Informationen zu dem Thema bekommt oder die Option hat, sich selbst noch weiter zu informieren. Dieses Icon soll auch immer zu sehen sein und nicht erst auf Anfrage. Außerdem soll man die KI-Response melden können, im Falle einer falschen Markierung, aber mehr Interaktion muss mit dem System nicht möglich sein. Eine andere Idee für so ein System ist, dass man selbst Informationen in das System gibt und diese von der KI prüfen lässt und nicht, dass die KI automatisch immer alle Posts prüft. 
+Wenn es um die direkte Nutzung geht, hatten mehrere Befragte die Vorstellung, dass die entsprechenden Posts mit einer Art Icon versehen werden, sodass man weiß, dass dieser Post Misinformationen enthält. Klickt man auf das Icon, wäre es optimal, wenn man noch mehr Informationen zu dem Thema bekommt oder die Option hat, sich selbst noch weiter zu informieren. Dieses Icon soll auch immer zu sehen sein und nicht erst auf Anfrage. Außerdem soll man die KI-Response melden können, im Falle einer falschen Markierung, aber mehr Interaktion muss mit dem System nicht möglich sein. Eine andere Idee für so ein System ist, dass man selbst Informationen in das System gibt und diese von der KI prüfen lässt und nicht, dass die KI automatisch immer alle Posts prüft.
 
-Es wurden auch einige kritische Gedanken geäußert, die im Thema „Grenzen und Sorgen“ festgehalten sind. Zum einen wurde hinterfragt, ob eine KI subjektive Meinungen, Satire und Sarkasmus erkennen und beurteilen kann. Außerdem wurde mehrfach geäußert, dass die KI auf jeden Fall „neutral“, „unparteiisch“ oder „unbiased“ entscheiden müsse und ob es generell überhaupt möglich sei, eine KI mit solchen Anforderungen zu entwickeln. 
+Es wurden auch einige kritische Gedanken geäußert, die im Thema „Grenzen und Sorgen“ festgehalten sind. Zum einen wurde hinterfragt, ob eine KI subjektive Meinungen, Satire und Sarkasmus erkennen und beurteilen kann. Außerdem wurde mehrfach geäußert, dass die KI auf jeden Fall „neutral“, „unparteiisch“ oder „unbiased“ entscheiden müsse und ob es generell überhaupt möglich sei, eine KI mit solchen Anforderungen zu entwickeln.
 
-Zum Thema „Verantwortung für das KI-Tool“ wäre die optimale Lösung, dass es eine dritte, unabhängige Partei gäbe, die keinen Nutzen von Verbreitung oder Verbergung von Informationen hat. Da dies aber unrealistisch erscheint, läge die Verantwortung wohl bei den Social Media Seiten, wobei auch der Gedanke geäußert wurde, dass es Richtlinien vom Staat geben soll, an die sich die Social Media Seiten halten müssen. 
+Zum Thema „Verantwortung für das KI-Tool“ wäre die optimale Lösung, dass es eine dritte, unabhängige Partei gäbe, die keinen Nutzen von Verbreitung oder Verbergung von Informationen hat. Da dies aber unrealistisch erscheint, läge die Verantwortung wohl bei den Social Media Seiten, wobei auch der Gedanke geäußert wurde, dass es Richtlinien vom Staat geben soll, an die sich die Social Media Seiten halten müssen.
 
 Als letztes geht es noch um das Thema „Transparenz des KI-Tools“. Man soll auf jeden Fall die Entscheidungen bzw. Beurteilungen der KI einsehen und nachvollziehen können und die Quellen, auf die sich die KI bezieht, überprüfen können. Außerdem seien Quelloffenheit des Codes und Transparenz im Datensatz, mit der die KI trainiert wird, wichtig.
 
@@ -138,7 +189,7 @@ library(tidyverse)
 daten <- read.csv("mturk_data.csv")
 ggplot(daten, aes(x = ati01, y = ati02)) +
   geom_point() +
-  geom_smooth(method = "lm", se = FALSE, fullrange = TRUE)+
+  geom_smooth(method = "lm", color = "orange", se = FALSE, fullrange = TRUE)+
   scale_x_continuous(limits = c(1,6), breaks = seq(1,6,1)) +
   scale_y_continuous(limits = c(1,6), breaks = seq(1,6,1))  
  
@@ -147,17 +198,188 @@ ggplot(daten, aes(x = ati01, y = ati02)) +
 
 ## 4.3 Stichprobe
 
-## 4.4 Deskriptive Statistik 
+Insgesamt haben 125 Personen (*N =* 125) an der Online-Studie teilgenommen. Die dabei für die Analyse zu berücksichtigen Daten beinhalten die von 119 Teilnehmenden (*n =* 119). Zu den Personen, die herausgefiltert wurden, gehören eine Person, welche unter 18 Jahren ist und deswegen nicht berücksichtigt werden kann. Zudem 5 weitere Datensätze, die einer Testgruppe angehören. 
+
+Abgesehen davon haben die Teilnehmenden ein Durchschnittsalter von 26.7 Jahren (*M =* 26.7), wobei die Standardabweichung einen Wert von (*SD =* 11) hat. Auch, liegt das niedrigste Alter bei 18 Jahren (*n =* 5) und das höchste Alter bei 59 (*n =* 1).
+
+Die Geschlechterverteilung der Teilnehmenden sieht folgendermaßen aus: 44.5% der Teilnehmenden sind weiblich, 53.8% sind männlich und 1.7% gaben ein nicht binäres Geschlecht an. 
+
+Weitere für uns interessante soziodemografische Daten sind der höchste allgemeinbildende Schulabschluss und der höchste berufliche Abschluss. Mit 92.4% hat die große Mehrheit der Teilnehmenden das Abitur, eine allgemeine oder fachgebundene Hochschulreife, einen erweiterten Oberschulabschluss oder eine Fachhochschulreife bzw. einen Abschluss der Fachoberschule. 5.9% gaben an, die Realschule oder die Polytechnische Oberschule besucht zu haben bzw. die Mittlere Reife oder einen Mittleren Schulabschluss zu haben. Jeweils 0.8% haben die Haupt- oder Volksschule besucht oder den Abschluss nach höchstens 7 Schuljahren gemacht. 
+
+Des Weiteren haben 55.5% der Teilnehmenden (noch) keinen beruflichen Abschluss. 7.6% haben dafür aber eine Lehre absolviert und 6.7% eine Ausbildung. Die Fachschule haben 0.8% der Teilnehmenden besucht und 5% die Fachhochschule oder Ingenieurschule. Zuletzt gaben 24.4% an, an einer Universität oder einer Hochschule den Abschluss gemacht zu haben. 
+
+Des Weiteren haben auch die Daten zur Nutzung sozialer Medien unter den Probanden eine Relevanz für unsere Forschung.  Dabei nutzen 88.2% der Teilnehmenden täglich soziale Medien, wie WhatsApp, Instagram und Facebook. 10.1% nutzen sie mehrmals pro Woche und 0.8% mehrmals im Monat. Ebenfalls gaben 0.8% an, sie nie zu benutzen. 
+
+
+
+## 4.4 Deskriptive Statistik
+Wir betrachten in unserer Analyse der Daten die ATI-Skala, die HCT-Skala und die SUS-Skala.
+
+Grundsätzlich liegt die Standardabweichung aller Skalen zwischen den Bereichen 1.1 und 0.6. Wir haben somit kleinere Standardabweichungen, die darauf hinweisen, dass die Ergebnisse der Probanden sehr nah an ihren Mittelwerten liegen und daher eine hohe Konsistenz in ihrer Bedeutung vorliegt.
+
+Der Alpha-Wert ist weiterhin bei allen Skalen hoch, sprich die Alpha-Werte liegen im Bereich zwischen 0 und 1. Daraus folgt, dass wir eine hohe interne Konsistenz der Messungen vorliegen haben. 
+
+Der Median weist in allen Skalen nur minimale Abstände zum durchschnittlichen Wert vor. Die Daten sind somit ungefähr symmetrisch um den Mittelwert verteilt. Es befinden sich daher keine Ausreißer oder extremen Werte, die den Durchschnitt stark verändern im Datensatz. 
+
+Die 9-Item-Skala zur Affinität für Technologie-Interaktion (ATI) misst die Neigung einer Person, sich aktiv mit intensiver Technologie-Interaktion zu beschäftigen oder diese zu meiden, und wird als wichtige persönliche Ressource für den erfolgreichen Umgang mit Technologie betrachtet.
+Bei unserer Studie liegt die durchschnittliche Technikaffinität der Teilnehmenden bei (*M =* 3.6, *SD =* 1.1). Die ATI-Skala hat einen möglichen Maximalwert von 6. Die Probanden besitzen dementsprechend weder eine besonders hohe, noch eine besonders niedrige Tendenz zur Technikaffinität. 
+
+Um herauszufinden, wie sehr eine Person einem Computer oder einem System vertraut, wird die HCT-Skala (engl. Human Computer Trust) benutzt. Dies wird anhand der Indikatoren Kompetenz, wahrgenommene Zuverlässigkeit und der wahrgenommenen Verständlichkeit abgeleitet. Der Score wurde für die 2 unterschiedlichen Tools erfasst, wobei die Tools den Probanden in jeweils zufälliger Reihenfolge gezeigt wurden. HC1T hat dabei ein durchschnittliches Vertrauen von (*M =* 3.9, *SD =* 1) und HC2T ein durchschnittliches Vertrauen, welches bei (*M =* 4.1, *SD =* 0.9) liegt. Die HCT-Skala hat einen möglichen Maximalwert von 6. Insgesamt lässt sich daraus folgern, dass die Probanden beiden Systemen  gegenüber ein tendenziell höheres Vertrauen aufweisen, es aber leichte Abweichungen gibt, welche vermutlich auf die Zufälligkeit der Zuordnung und der unterschiedlichen Einschätzungen der beiden KI-Tools zurückzuführen sind.
+
+Mithilfe der SUS-Skala kann man ermitteln, wie gebrauchstauglich ein System ist. Die Gebrauchstauglichkeit unserer KI-Systeme wurden durch die Teilnehmenden durchschnittlich mit (*M =* 3.9, *SD =* 0.6) bewertet. Im Allgemeinen lässt sich daraus erkennen, dass die Probanden mit der Gebrauchstauglichkeit der KI-Tools zufrieden sind, man aber aus dem Wert 5, welcher als höchstmöglicher Wert gilt, der vergeben werden kann, darauf schließen kann, dass es Raum für Verbesserung gibt.
+
 
 ```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
 
 library(dplyr)
 library(tidyr)
 library(psych)
 
-ergebnissurvey <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/surveydata.csv")
+ergebnissurvey <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-18/surveydata.csv")
 
-ergebnisapp <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-11/appdata.csv")
+ergebnisapp <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-18/appdata.csv")
+
+ergebnissurvey <- ergebnissurvey %>%
+  filter(age >= 18 & age < 120 & groupId != "42")
+#---------------------------------------------------------------
+#Teil 1 Filtern und Data Wrangling
+
+
+#appdatasummarize_unique1 <- ergebnisapp %>%
+ # group_by(user_id) %>%
+  #summarize(across(everything(), first))
+#wegen diesem many to many relationship Ding 
+
+#datengesamt <- gefilterte_daten %>%
+ #full_join(appdatasummarize_unique1, by =  c("userId" = "user_id"))
+
+#datengesamt <- datengesamt %>%
+ #       select(starts_with("ATI")) %>%
+  #      psych::alpha(check.keys = TRUE)
+
+
+#---------------------------------------------------------------
+#Teil 2 Stichprobe
+# 2.1 Geschlechterverteilung 
+
+n <- nrow(ergebnissurvey)
+
+gender_count <- ergebnissurvey %>%
+  group_by(gender) %>%
+  summarise(Frequency = n())
+
+pct_female = gender_count %>% 
+  filter(gender == 2) %>% 
+  summarise(Weiblich = (Frequency / n )*100)
+pct_male = gender_count %>% 
+  filter(gender == 1) %>% 
+  summarise(Männlich = (Frequency / n )*100)
+pct_other = gender_count %>% 
+  filter(gender == "-oth-") %>% 
+  summarise(Andere = (Frequency / n )*100)
+
+
+
+#---------------------------------------------------------------
+#2.2 Bildungsabschluss
+edugeneral_count <- ergebnissurvey %>%
+  group_by(edugeneral) %>%
+  summarise(Frequency = n())
+
+if(nrow(filter(edugeneral_count, edugeneral == "1")) > 0) {
+  pct_edugeneral1 = edugeneral_count %>% 
+    filter(edugeneral == "1") %>% 
+    summarise(Percentage = (Frequency / sum(Frequency)) * 100)
+} else {
+  pct_edugeneral1 = data.frame(pct_edugeneral1 = 0)
+}
+pct_edugeneral2 = edugeneral_count %>% 
+  filter(edugeneral == "2") %>% 
+  summarise(Percentage = (Frequency/n)*100)
+pct_edugeneral3 = edugeneral_count %>% 
+  filter(edugeneral == "3") %>% 
+  summarise(Percentage = (Frequency/n)*100)
+pct_edugeneral4 = edugeneral_count %>% 
+  filter(edugeneral == "4") %>% 
+  summarise(Percentage = (Frequency/n)*100)
+pct_edugeneral5 = edugeneral_count %>% 
+  filter(edugeneral == "5") %>% 
+  summarise(Percentage = (Frequency/n)*100)
+
+#---------------------------------------------------------------
+#2.3 Arbeitsabschluss
+eduvocational_count <- ergebnissurvey %>%
+  group_by(eduvocational) %>%
+  summarise(Frequency = n())
+
+pct_eduvocational1 = eduvocational_count %>%
+  filter(eduvocational == "1") %>%
+  summarise(Percentage = (Frequency/n)*100)
+pct_eduvocational2 = eduvocational_count %>%
+  filter(eduvocational == "2") %>%
+  summarise(Percentage = (Frequency/n)*100)
+pct_eduvocational3 = eduvocational_count %>%
+  filter(eduvocational == "3") %>%
+  summarise(Percentage = (Frequency/n)*100)
+pct_eduvocational4 = eduvocational_count %>%
+  filter(eduvocational == "4") %>%
+  summarise(Percentage = (Frequency/n)*100)
+pct_eduvocational5 = eduvocational_count %>%
+  filter(eduvocational == "5") %>%
+  summarise(Percentage = (Frequency/n)*100)
+pct_eduvocational6 = eduvocational_count %>%
+  filter(eduvocational == "6") %>%
+  summarise(Percentage = (Frequency/n)*100)
+
+#---------------------------------------------------------------
+#2.4 Social Media Nutzung
+smfrequency_count <- ergebnissurvey %>%
+  group_by(smfrequency) %>%
+  summarise(Frequency = n())
+
+smfrequency1 = smfrequency_count %>%
+  filter(smfrequency == "1") %>%
+  summarise(Percentage = (Frequency/n)*100)
+
+smfrequency2 = smfrequency_count %>%
+  filter(smfrequency == "2") %>%
+  summarise(Percentage = (Frequency/n)*100)
+
+smfrequency3 = smfrequency_count %>%
+  filter(smfrequency == "3") %>%
+  summarise(Percentage = (Frequency/n)*100)
+
+smfrequency4 = smfrequency_count %>%
+  filter(smfrequency == "4") %>%
+  summarise(Percentage = (Frequency/n)*100)
+smfrequency5 = smfrequency_count %>%
+  filter(smfrequency == "5") %>%
+  summarise(Percentage = (Frequency/n)*100)
+
+
+
+
+
+  
+#---------------------------------------------------------------
+#2.4 Alter
+
+stichprobenbeschreibung <- ergebnissurvey %>% summarise(n = nrow(ergebnissurvey), mean_age = mean(ergebnissurvey$age, na.rm = TRUE))
+
+#stichprobenbeschreibung
+
+sd_age <- sd(ergebnissurvey$age)
+#sd_age
+
+                                                                                                    
+
+#---------------------------------------------------------------
+
+#Teil 3 
 
 ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
     mutate(first_variant = first(variant))
@@ -166,72 +388,276 @@ ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
   mutate(correct_eval = ifelse(user_decision == correct_decision, 1, 0))
 
 appdatasummarize <- ergebnisapp %>% group_by(user_id, variant) %>%
-  summarize(mean_interactions = mean(number_of_interactions),
-            precision = mean(correct_eval),
+  summarize(mean_interactions = mean(number_of_interactions, na.rm = TRUE),
+            precision = mean(correct_eval, na.rm = TRUE),
             first_variant = first(first_variant)) %>%
   pivot_wider(names_from = variant, values_from = c(mean_interactions, precision))
 
-appdatasummarize_unique <- appdatasummarize %>%
-  group_by(user_id) %>%
-  summarize(across(everything(), first))
 
-print(appdatasummarize_unique)
-
-ergebnissurvey <- ergebnissurvey %>% left_join(appdatasummarize_unique, by = c("userId" = "user_id" ))
-
-keys_ATI <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","ATI.8.","-ATI.9."))
+ergebnissurvey <- rename(ergebnissurvey, user_id = userId)
 
 
-keys_HCT1 <- list(HCTT1 = c("HCT1T.01.","HCT1T.02.","HCT1T.03.","HCT1T.04.","HCT1T.05." ))
-keys_HCT2 <- list(HCTT2 = c("HCT2T.01.","HCT2T.02.","HCT2T.03.","HCT2T.04.","HCT2T.05." ))
 
-keys_SUS1 <- list(SUS1 = c("SUS.1.","SUS.2.", "SUS.3.", "SUS.4.", "SUS.5.", "SUS.6.", "SUS.7.", "SUS.8.", "SUS.9.", "SUS.10."))
-keys_SUS2 <- list(SUS2 = c("SUS.1.","SUS.2.", "SUS.3.", "SUS.4.", "SUS.5.", "SUS.6.", "SUS.7.", "SUS.8.", "SUS.9.", "SUS.10."))
+ergebnissurvey <- ergebnissurvey %>% left_join(appdatasummarize, by = "user_id", relationship = "many-to-many")
+
+#-----------------------------------------------------------------------------
 
 
-scored_ATI <- psych::scoreItems(keys_ATI, ergebnissurvey)
-scored_HCT1 <- psych::scoreItems(keys_HCT1, ergebnissurvey)
-scored_HCT2 <- psych::scoreItems(keys_HCT2, ergebnissurvey)
-scored_SUS1 <- psych::scoreItems(keys_SUS1, ergebnissurvey)
-scored_SUS2 <- psych::scoreItems(keys_SUS2, ergebnissurvey)
 
-ergebnissurvey <- ergebnissurvey %>% cbind(scored_ATI$scores)
-ergebnissurvey <- ergebnissurvey %>% cbind(scored_HCT1$scores)
-ergebnissurvey <- ergebnissurvey %>% cbind(scored_HCT2$scores)
-ergebnissurvey <- ergebnissurvey %>% cbind(scored_SUS1$scores)
-ergebnissurvey <- ergebnissurvey %>% cbind(scored_SUS2$scores)
+#------------------------------------------------------------------
+
+
+
+keys_ATI <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","-ATI.8.","ATI.9."))
+scored <- psych::scoreItems(keys_ATI, ergebnissurvey)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+
+keys_HCT1 <- list(HCT1T = c("HCT1T.01.","HCT1T.02.","HCT1T.03.","HCT1T.04.","HCT1T.05." ))
+scored <- psych::scoreItems(keys_HCT1, ergebnissurvey)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+
+keys_HCT2 <- list(HCT2T = c("HCT2T.01.","HCT2T.02.","HCT2T.03.","HCT2T.04.","HCT2T.05." ))
+scored <- psych::scoreItems(keys_HCT2, ergebnissurvey)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+
+keys_SUS <- list(SUS = c("SUS.1.","-SUS.2.", "SUS.3.", "-SUS.4.", "SUS.5.", "-SUS.6.", "SUS.7.", "-SUS.8.", "SUS.9.", "-SUS.10."))
+scored <- psych::scoreItems(keys_SUS, ergebnissurvey)
+ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
+
+
 
 ergebnissurvey <- ergebnissurvey %>% mutate(HCT_E = ifelse(first_variant == "eva-ai", keys_HCT1, keys_HCT2 ))
-ergebnissurvey <- ergebnissurvey %>% mutate(SUS_E = ifelse(first_variant == "eva-ai", keys_SUS1, keys_SUS2 ))
+ergebnissurvey <- ergebnissurvey %>% mutate(HCT_E = ifelse(first_variant == "rd-ai", keys_HCT1, keys_HCT2 ))
 
 
+deskriptive_statistik <- function(data, scale_name) {
+  n <- nrow(ergebnissurvey)
+  alpha <- psych::alpha(data %>% select(starts_with(scale_name)), check.keys = TRUE)$total$raw_alpha
+  mean_val <- mean(data[[scale_name]], na.rm = TRUE)
+  median_val <- median(data[[scale_name]], na.rm = TRUE)
+  min_val <- min(data[[scale_name]], na.rm = TRUE)
+  max_val <- max(data[[scale_name]], na.rm = TRUE)
+  sd_val <- sd(data[[scale_name]], na.rm = TRUE)
+  return(data.frame(n = n, alpha = alpha, mean = mean_val, median = median_val, min = min_val, max = max_val, sd = sd_val))
+}
 
-#print(names(ergebnissurvey))
-#print(names(ergebnisapp))
+```
 
-gefilterte_daten <- ergebnissurvey %>%
-  filter(age > 18 & age < 120 & groupId != "42")
-#müssen noch danach filtern ob Leute den Fragebogen abgebrochen haben 
+```{r}
+#| echo: false
+#| message: false
+#| label: tbl-skalen
+#| tbl-cap: "Diskriptive Statistik für ATI, HCT und SUS"
+#| tbl-cap-location: top
+#| warning: false
 
+#Tabelle für die verschiedenen Scores
 
-#datengesamt <- gefilterte_daten %>%
- # full_join(ergebnisapp, by =  c("userId" = "user_id"))
+ati_werte <- deskriptive_statistik(ergebnissurvey, "ATI")
+hct1_werte <- deskriptive_statistik(ergebnissurvey, "HCT1T")
+hct2_werte <- deskriptive_statistik(ergebnissurvey, "HCT2T")
+sus_werte <- deskriptive_statistik(ergebnissurvey, "SUS")
 
-#datengesamt %>%
- # select(starts_with("ATI")) %>%
-  #psych::alpha(check.keys = TRUE)
+tabelle_scores <- rbind(ati_werte, hct1_werte, hct2_werte, sus_werte)
+row.names(tabelle_scores) <- c("ATI", "HCT1T", "HCT2T", "SUS")
+knitr::kable(tabelle_scores, caption = "Diskriptive Statistik für ATI, HCT und SUS")
+
 ```
 
 
+
 ## 4.5 Inferenzstatistik
+### 4.5.1 Durchführung des t-tests 
+Durchführung: 
+Wir wollten untersuchen, ob es bei der Präzision der richtigen Entscheidungen altersbezogene signifikante Unterschiede gibt. 
+Um die Unterschiede bezüglich des Alters zu vergleichen, haben wir zuerst einen Median-Split des Alters durchgeführt und unsere Daten in zwei Gruppen aufgeteilt: Eine Gruppe die jünger und eine die älter als der Median ist.
+Nach dieser Aufteilung konnten wir den t-Test für beide KIs durchführen. Da wir zwei Variablen (Alter und Präzision) miteinander vergleichen wollen, haben wir einen paired t-test durchgeführt. 
+Eine Visualisierung dieser Ergebnisse ist in @fig-ttest zu sehen.
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Ein Vergleich der Prototypen bezüglich der Präzision in Anbetracht des Alters"
+#| label: fig-ttest
+
+library(dplyr)
+library(tidyr)
+library(psych)
+library(ggplot2)
+
+#Inferenzenstatistik 
+appdatasummarize <- appdatasummarize %>%
+  left_join(ergebnissurvey %>% select(user_id, age), by = "user_id") %>% 
+  filter(!is.na(age))
+
+# precision_E: Anteil korrekt eingestufter Posts der evaluativen KI
+precision_E <- ergebnissurvey %>%
+  filter(first_variant == "eva-ai") %>%
+  summarise(precision_E = mean(`precision_eva-ai`))
+
+# mean_interactions_E: mittlere Anzahl an Interaktionen der evaluativen KI
+mean_interactions_E <- ergebnissurvey %>%
+  filter(first_variant == "eva-ai") %>%
+  summarise(mean_interactions_E = mean(`mean_interactions_eva-ai`))
+
+# precision_R: Anteil korrekt eingestufter Posts der Recommender KI
+precision_R <- ergebnissurvey %>%
+  filter(first_variant == "rd-ai") %>%
+  summarise(precision_R = mean(`precision_rd-ai`))
+
+#mean_interactions_R: mittlere Anzahl an Interaktionen der Recommender KI
+mean_interactions_R <- ergebnissurvey %>%
+  filter(first_variant == "rd-ai") %>%
+  summarise(mean_interactions_R = mean(`mean_interactions_rd-ai`))
+
+
+
+
+#t-test von den zwei Variablen in Anbetracht auf das Alter --> Vergleich von Alter und Präsision KI1 und KI2
+
+median_age <- median(appdatasummarize$age, na.rm = TRUE)
+
+#Bei appdatasummarize sind wir nur noch bei 119 Stichproben, da User ID nicht übereinstimmend
+# Erstelle eine neue Spalte age_group basierend auf dem Median
+appdatasummarize <- appdatasummarize %>%
+  mutate(age_group = ifelse(age <= median_age, "Younger", "Older"))
+
+# Erstelle zwei separate Tabellen basierend auf age_group
+median_age_young <- appdatasummarize %>%
+  filter(age_group == "Older")
+
+median_age_old <- appdatasummarize %>%
+  filter(age_group == "Younger")
+
+
+
+# t-Test für die Präzision der evaluativen KI zwischen den Altersgruppen
+t_test_precision_eva_ai <- t.test(median_age_young$`precision_eva-ai`, median_age_old$`precision_eva-ai`, alternative = "two.sided")
+
+# t-Test für die Präzision der Recommender KI zwischen den Altersgruppen
+t_test_precision_rd_ai <- t.test(median_age_young$`precision_rd-ai`, median_age_old$`precision_rd-ai`, alternative = "two.sided")
+
+
+# Ausgabe der Ergebnisse der t-Tests
+#t_test_precision_eva_ai
+#t_test_precision_rd_ai
+
+
+
+# Erstellung des Boxplots
+data <- data.frame(
+  group = c("Younger", "Older"),
+  mean_precision_eva_ai = c(mean(median_age_old$`precision_eva-ai`), mean(median_age_young$`precision_eva-ai`)),
+  se_precision_eva_ai = c(sd(median_age_old$`precision_eva-ai`)/sqrt(length(median_age_old$`precision_eva-ai`)), sd(median_age_young$`precision_eva-ai`)/sqrt(length(median_age_young$`precision_eva-ai`))),
+  mean_precision_rd_ai = c(mean(median_age_old$`precision_rd-ai`), mean(median_age_young$`precision_rd-ai`)),
+  se_precision_rd_ai = c(sd(median_age_old$`precision_rd-ai`)/sqrt(length(median_age_old$`precision_rd-ai`)), sd(median_age_young$`precision_rd-ai`)/sqrt(length(median_age_young$`precision_rd-ai`)))
+)
+
+# Plot erstellen
+ggplot(data, aes(x = group)) +
+  geom_point(aes(y = mean_precision_eva_ai), color = "orange", size = 4) +
+  geom_errorbar(aes(ymin = mean_precision_eva_ai - se_precision_eva_ai, ymax = mean_precision_eva_ai + se_precision_eva_ai), width = 0.2, color = "orange") +
+  geom_point(aes(y = mean_precision_rd_ai), color = "green", size = 4) +
+  geom_errorbar(aes(ymin = mean_precision_rd_ai - se_precision_rd_ai, ymax = mean_precision_rd_ai + se_precision_rd_ai), width = 0.2, color = "green") +
+  labs(x = "Altersgruppe", y = "Mittelwert Präzision") +
+  scale_x_discrete(labels = c("Younger" = "Jünger", "Older" = "Älter")) +  # Anpassung der x-Achsenbeschriftungen
+  scale_color_manual(values = c("evaluative KI" = "orange", "Recommender KI" = "green"), labels = c("evaluative KI", "Recommender KI")) +  # Farben für die KIs
+  theme_minimal()  # Anpassung des Themes, nach Bedarf
+
+```
+### 4.5.2 Auswertung des t-tests
+Bei der Evaluierenden KI (@fig-ttest in orange) ergab der t-Test folgende Ergebnisse:
+*t =* 0,92
+*df =*  115.42
+*p =* 0,36
+
+Da der p-Wert größer als 0,05 ist, bedeutet dies, dass der Unterschied in den Mittelwerten der Präzision zwischen den jüngeren und älteren Gruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 36,17 %, was weit über der üblichen Schwelle von 5 % liegt.
+Da es keinen signifikanten Unterschied in der Präzision der beiden Altersgruppen bei der evaluierenden KI gibt, ist nicht anzunehmen, dass das Alter einen Einfluss auf die Präzision beim Treffen von Entscheidungen hat.
+
+
+Bei der Recommender-KI (@fig-ttest in grün) ergab der t-Test folgende Ergebnisse:
+*t =* 1,42
+*df =*  108.92
+*p =* 0,16
+
+Auch hier ist der p-Wert größer als 0,05, was bedeutet, dass der Unterschied in der Präzision zwischen den Altersgruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 15,89 %, was ebenfalls über der Schwelle von 5 % liegt. Daher ist auch bei dieser KI nicht anzunehmen, dass es einen signifikanten Einfluss des Alters auf die Präzision der Entscheidungen gibt. 
+
+
+
+Die t-Tests für beide KIs liefern also das gleiche Ergebnis, dass es keinen signifikanten Unterschied zwischen den beiden Altersgruppen bei der Präzision gibt. Beide Gruppen können also gleich gut beurteilen, ob es sich bei den präsentierten Informationen um die Wahrheit handelt oder nicht. 
+
+
+### 4.5.3 Durchführung der Pearson-Korrelation 
+
+Da wir uns in unserer Forschung besonders auf den Umgang verschiedener Altersgruppen mit den Systemen fokussieren, schauen wir uns den Zusammenhang zwischen dem Alter und dem HCT-Score, also dem Human-Computer-Trust genauer an. Um zu überprüfen, ob es hier tatsächlich eine relevanten Zusammenhang gibt, haben wir einen Pearson-Korrelationstest durchgeführt.
+Den Test haben wir sowohl für die Evaluierende AI als auch für die Recommender AI durchgeführt und auch diese in den @fig-cor1test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden AI) und @fig-cor2test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI) visuell dargestellt.
+
+### 4.5.4 Auswertung der Pearson-Korrelation 
+
+Die Analyse der Evaluierenden KI ergab einen signifikanten Zusammenhang mit einem t-Wert von -2,1155 und einem p-Wert von 0,03617. Dies deutet darauf hin, dass das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert ist (*p <* 0,05). Der berechnete Korrelationskoeffizient von -0,1766103 zeigt an, dass ein höheres Alter tendenziell mit einem niedrigeren HCT-Score verbunden ist. 
+
+Der Test zur Recommender KI liefert ebenfalls einen signifikanten Zusammenhang, mit einem t-Wert von -3,1246 und einem p-Wert von 0,002168. Auch hier war das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert. Der Korrelationskoeffizient in diesem Fall betrug -0,2561782, was erneut darauf hinweist, dass ältere Probanden tendenziell niedrigere HCT-Scores aufwiesen. 
+
+In beiden Analysen zeigte sich somit konsistent, dass das Alter der Probanden einen signifikanten Einfluss auf ihren HCT-Score hat, wobei ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. 
+
+
+### 4.5.5 Abschließende Zusammenfassung der Inferenzstatistik
+
+In unserer inferenzstatistischen Analyse konnten wir herausstellen, dass ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. Da das Vertrauen in die Systeme bei älteren Probanden niedriger ist, ließe sich vermuten, dass sich dies auch auf den Umgang und schließlich die Präzision der Einschätzung auswirkt. Hier konnten wir mit unserem t-Test allerdings keinen signifikanten Zusammenhang erkennen. Aktuell scheinen also sowohl ältere als auch jüngere Probanden unabhängig vom Vertrauen in das System die gleichen Ergebnisse zu erzielen. 
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden AI"
+#| label: fig-cor1test
+
+library(dplyr)
+library(tidyr)
+library(psych)
+library(ggplot2)
+
+cor1 <- cor.test(ergebnissurvey$age, ergebnissurvey$HCT1T)
+#cor1
+
+ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT1T)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Korrelation zwischen Alter und HCT-Score der Eva-Ai",
+       x = "Alter",
+       y = "HCT-Score")
+
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI"
+#| label: fig-cor2test
+
+cor2 <- cor.test(ergebnissurvey$age, ergebnissurvey$HCT2T)
+#cor2
+
+ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT2T)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Korrelation zwischen Alter und HCT-Score der Eva-Ai",
+       x = "Alter",
+       y = "HCT-Score")
+
+```
 
 
 # 5 Diskussion
 
 # 6 Literaturverzeichnis
 
-<div id="refs"></div>
-
+::: {#refs}
+:::
 
 # 7 Anhänge
 
@@ -239,10 +665,7 @@ gefilterte_daten <- ergebnissurvey %>%
 
 Hallo zusammen!
 
-Falschinformationen sind weit verbreitet und jeder ist mit Ihnen tagtäglich konfrontiert.
-In unserer Fragenbogenstudie testest du ein KI Werkzeug (Künstliche Intelligenz), welches dir hilft irreführende Informationen im Internet zu erkennen.
-Die Studie dauert ca. 30 - 45 Minuten und kann einfach vom Laptop / Tablet / PC online durchgeführt werden.
-Medieninformatik- und Psychologie-Studierende der Universität Lübeck erhalten für die Teilnahme 0,5 VP Stunden.
+Falschinformationen sind weit verbreitet und jeder ist mit Ihnen tagtäglich konfrontiert. In unserer Fragenbogenstudie testest du ein KI Werkzeug (Künstliche Intelligenz), welches dir hilft irreführende Informationen im Internet zu erkennen. Die Studie dauert ca. 30 - 45 Minuten und kann einfach vom Laptop / Tablet / PC online durchgeführt werden. Medieninformatik- und Psychologie-Studierende der Universität Lübeck erhalten für die Teilnahme 0,5 VP Stunden.
 
 Unsere Einschlusskriterien sind
 

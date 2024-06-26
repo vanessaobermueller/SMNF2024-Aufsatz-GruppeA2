@@ -17,7 +17,7 @@ fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
 ---
 
-**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** af0de95
+**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 3654615
  
 
 
@@ -89,7 +89,7 @@ Ausgewählte Variablen für unsere Onlineumfrage sind folgende. Variablen für d
 
 Nach der Auswertung der Onlineumfragen werden quantitative Analysemethoden verwendet, darunter statistische Verfahren wie t-Test und Korrelation. Diese Methoden dienen der Untersuchung von den ausgewählten Variablen, um fundierte Erkenntnisse aus den Umfragedaten zu gewinnen. Der t-Test stellt fest, ob es einen signifikanten Unterschied zwischen den Mittelwerten von zwei Gruppen gibt. Die Korrelation hingegen misst den Zusammenhang zwischen zwei Variablen und zeigt, in welchem Ausmaß sich Veränderungen einer Variable auf die andere Variable auswirkt. Beide Methoden werden somit verwendet, um Beziehungen und Muster in den Daten rauszufiltern und zu analysieren. Somit können Hypothesen bestätigt oder widerlegt werden und dadurch können Entscheidungen über den weiteren Verlauf der Studie getroffen werden. 
 
-Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein entscheidener Faktor bei der Konzipierung von KI-Tools zur Dedektion von Misinformationen ist und ob es in Hinblick dessen Zusammenhänge zwischen dem Alter und unter anderem der Techniaffinität oder dem Vertrauen gegenüber solcher KI-Tools gibt. Damit stellt sich die Frage, wie dynamisch und/oder individuell solche KI-Tools aufgebaut werden müsssen damit die über Altersgrenzen hinweg funktionieren und verstanden werden. 
+Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein entscheidener Faktor bei der Konzipierung von KI-Tools zur Dedektion von Misinformationen ist und ob es in Hinblick dessen, Zusammenhänge zwischen dem Alter und unter anderem der Techniaffinität oder dem Vertrauen gegenüber solcher KI-Tools gibt. Damit stellt sich die Frage, wie dynamisch und/oder individuell solche KI-Tools aufgebaut werden müsssen damit diese über Altersgrenzen hinweg funktionieren und verstanden werden. 
 
 # 4 Ergebnisse
 
@@ -102,12 +102,19 @@ Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein 
 
 library(ggplot2)
 library(tidyverse)
+ 
+ati <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-18/surveydata.csv", header = TRUE ,)
 
-ati <- read.csv("mturk_data.csv", header = TRUE ,)
+ati_columns <- grep("ATI", names(ati), value = TRUE)
+ati <- ati %>%
+  rowwise() %>%
+  mutate(ATI_mean = mean(c_across(all_of(ati_columns)), na.rm = TRUE)) %>%
+  ungroup()
+
 mean_age <- mean(ati$age)
-mean_ati_young <- mean(ati[ati$age < mean_age,"ati_mean"])
+mean_ati_young <- mean(ati[ati$age < mean_age,"ATI_mean"])
 
-mean_ati_old <- mean(ati[ati$age >= mean_age, "ati_mean"]) 
+mean_ati_old <- mean(ati[ati$age >= mean_age, "ATI_mean"]) 
 
 # Daten für den Plot vorbereiten
 plot_data <- data.frame(
@@ -116,17 +123,17 @@ plot_data <- data.frame(
 )
 
 # Barplot erstellen
-ggplot(plot_data, aes(x = Gruppe, y = ATI_Mean, fill = Gruppe)) +
-  geom_bar(stat = "identity") +
-  labs(
-       x = "",
-       y = "Durchschnittlicher ATI-Score") +
-  theme_minimal() +
-  scale_fill_brewer(palette = "Set2")
+#ggplot(plot_data, aes(x = Gruppe, y = ATI_Mean, fill = Gruppe)) +
+ # geom_bar(stat = "identity") +
+  #labs(
+   #    x = "",
+    #   y = "Durchschnittlicher ATI-Score") +
+  #theme_minimal() +
+  #scale_fill_brewer(palette = "Set2")
 
 ```
 
-@fig-durchschnittati zeigt, dass Jüngere Teilnehmer im Schnitt einen leicht höheren ATI Score von `r round(mean_ati_young,2)` als ältere Teilnehmer besitzen, welche einen ATI Score von `r round(mean_ati_old,2)` haben. Daraus folgt, dass beide Gruppen ein ähnlich hohes Ausmaß an Technikaffinität aufzeigen.
+
 
 ```{r}
 #| echo: false
@@ -139,17 +146,26 @@ ggplot(plot_data, aes(x = Gruppe, y = ATI_Mean, fill = Gruppe)) +
 library(ggplot2)
 library(dplyr)
 
-# Daten einlesen
-ati <- read.csv("mturk_data.csv", header = TRUE)
 
 # Scatterplot erstellen
-ggplot(ati, aes(x = age, y = ati_mean)) +
+ggplot(ati, aes(x = age, y = ATI_mean)) +
   geom_point(alpha = 0.6) +
   geom_smooth(method = "lm", color = "orange", se = FALSE) +
   labs(
        x = "Alter",
        y = "ATI-Score") +
   theme_minimal()
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Zusammenhang zwischen dem Alter und dem gemessenen ATI-Score gemessen durch einen t-test"
+
+
+#t_test_precision_eva_ai <- t.test(ergebnissurvey$age, ergebnissurvey$, alternative = "two.sided")
+
 ```
 
 

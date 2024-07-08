@@ -1,5 +1,5 @@
 ---
-title: "Misinformation auf Social Media: die Notwendigkeit zur Detektion"
+title: "Misinformation auf Social Media: Die Notwendigkeit zur Detektion"
 author: 
   - Kaja Bartsch 
   - Zelda Becker

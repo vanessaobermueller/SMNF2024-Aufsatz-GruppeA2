@@ -18,8 +18,6 @@ bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541
 ---
 
 **GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 3654615
- 
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
@@ -33,15 +31,11 @@ Wir verpflichten uns als Gruppe sorgfältig mit Feedback, unterschiedlichen Pers
 
 Social Media ist aus der heutigen Zeit gar nicht mehr weg zu denken. Dabei dient es immer weniger nur der reinen Unterhaltung. Informationsbeschaffung und Informationsverbreitung über das Netz sind ebenso alltäglich geworden, wie das Scrollen zum Zeitvertreib. Doch können nicht nur offizielle Seiten diese Informationen bereitstellen. Den UserInnen selbst ist es auch möglich, die Informationen hochzuladen, die andere dann konsumieren. Dies führt dazu, dass inzwischen Unmengen an Meinungen, Neuigkeiten und Fakten im Internet kursieren – nur kann man sich nie über den Wahrheitsgehalt dieser Informationen auf Social Media sicher sein.
 
-
 Den meisten UserInnen ist die Menge an Misinformationen, die sie täglich lesen, gar nicht bewusst. Dabei kann im schlimmsten Fall durch gezielte Misinformationskampagnen, Misstrauen in der Gesellschaft geweckt werden, was begünstigend für z.B. Verschwörungstheorien ist und das Vertrauen in die Medien und Institutionen zerstören kann. Es werden Fakten erfunden, aus dem Kontext gerissen oder unvollständig dargestellt. Umso wichtiger ist es also, dass einem bewusst wird, wie man diese Misinformationen erkennen kann. Und außerdem, dass man das Feld von Misinformationen auf Social Media erforscht, um optimal dagegen vorgehen zu können.
-
 
 Es bleibt bislang aber unklar, was der optimale Weg ist, um die UserInnen dabei zu unterstützen, ihren Umgang auf Social Media so reflektiert wie möglich zu gestalten. Es gibt schon einige KI-Tools, die dabei helfen sollen, Misinformationen zu entdecken. Da diese aber häufig noch unglaubwürdig sind oder die UserInnen nicht überzeugen, bedarf es weiterer Forschung rund um KI-Tools und KI-Systeme auf Social Media. Deswegen haben wir uns in dieser Studie mit der Frage beschäftigt, welche Nutzendenanforderungen es an KI als Werkzeug zur Detektion von Misinformation auf Social Media gibt und wie Personen in diesem Kontext mit unterschiedlichen Feedback-Arten umgehen.
 
-
 Da heutzutage auch alle Altersgruppen auf Social Media vertreten sind, ist es wichtig, das KI-Tool so zu konzipieren, dass keine Altersgruppe Probleme mit dessen Nutzung hat. Genauer stellen wir uns also die Frage, ob das Alter eines Menschen ein entscheidender Faktor bei der Konzipierung von KI-Tools zur Detektion von Misinformationen ist und ob es in Hinblick dessen Zusammenhänge zwischen dem Alter und unter anderem der Technikaffinität oder dem Vertrauen gegenüber solcher KI-Tools gibt. Damit stellt sich auch die Frage, wie dynamisch und/oder individuell solche KI-Tools aufgebaut sein müssen, damit diese über Altersgrenzen hinweg funktionieren und verstanden werden.
-
 
 # 2 Literaturübersicht
 
@@ -89,7 +83,7 @@ Die Zustimmung zur Verarbeitung ihrer Daten ist ein essenzielles Kriterium, um d
 
 ### 3.2.3 Gewählte Methoden
 
-Die gewählte Methode für die Onlineumfrage ist die Verwendung von Skalen. Dabei werden verschiedene Skalenniveaus angewendet, um unterschiedliche Arten von Daten zu erfassen. In unserer Umfrage wird das nominale Skalenniveau für das Geschlecht der Teilnehmenden verwendet, wobei die Kategorien "Männlich" und "Weiblich" erfasst werden. Ordinalskalierte Daten können wir in eine Rangfolge bringen, jedoch können wir keine genauen Aussagen über die Abstände zwischen den Werten machen. 
+Die gewählte Methode für die Onlineumfrage ist die Verwendung von Skalen. Dabei werden verschiedene Skalenniveaus angewendet, um unterschiedliche Arten von Daten zu erfassen. In unserer Umfrage wird das nominale Skalenniveau für das Geschlecht der Teilnehmenden verwendet, wobei die Kategorien "Männlich" und "Weiblich" erfasst werden. Ordinalskalierte Daten können wir in eine Rangfolge bringen, jedoch können wir keine genauen Aussagen über die Abstände zwischen den Werten machen.
 
 In unserer Umfrage werden der höchste allgemeinbildenden Schulabschluss und der höchste berufliche Abschluss auf ordinaler Basis erfasst, da sie eine Reihenfolge haben, aber keine genauen Abstände zwischen den Abschlüssen angegeben sind. Für den schulischen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Hauptschulabschluss", "Realschulabschluss", "Abitur". Für den beruflichen Abschluss stehen folgende Optionen zur Auswahl: "(noch) keinen Abschluss", "Lehre/Ausbildung", "Fachschule", "Universität/Hochschule". Für metrische Daten können wir eine Rangfolge erstellen und die Abstände zwischen den Werten sind klar definiert. Metrische Daten ermöglichen uns, sowohl die Häufigkeit als auch die Rangfolge und den genauen Abstand zwischen den Werten zu bestimmen.
 
@@ -99,9 +93,9 @@ Im Pre-test-Fragebogen und in beiden Post-test Fragebögen erfolgt die Abfrage m
 
 Ausgewählte Variablen für unsere Onlineumfrage sind folgende. Variablen für den Pre-test Fragebogen sind Soziodemographische Daten wie Alter, Geschlecht, Bildungsgrad. Ebenfalls Daten zu der Persönlichkeit der Teilnehmenden, die Einstellung zu Technik, zu den Nutzungsgewohnheiten in den sozialen Medien und zu der Vorerfahrung mit KI. Variablen für die System-Evaluation sind Erfolg, Anzahl der Interaktionen und Time-on-Task. Diese Daten dienen der Bewertung der Posts und fassen die Interaktion mit der Anwendung zusammen. Die Variablen für die Post-test Fragebogen sind Usability, User Experience, Subjektives Bewusstsein für die Informationsverarbeitung und Vertrauen in das System. Dies sind Daten zu der Bewertung der Anwendung.
 
-Nach der Auswertung der Onlineumfragen werden quantitative Analysemethoden verwendet, darunter statistische Verfahren wie t-Test und Korrelation. Diese Methoden dienen der Untersuchung von den ausgewählten Variablen, um fundierte Erkenntnisse aus den Umfragedaten zu gewinnen. Der t-Test stellt fest, ob es einen signifikanten Unterschied zwischen den Mittelwerten von zwei Gruppen gibt. Die Korrelation hingegen misst den Zusammenhang zwischen zwei Variablen und zeigt, in welchem Ausmaß sich Veränderungen einer Variable auf die andere Variable auswirkt. Beide Methoden werden somit verwendet, um Beziehungen und Muster in den Daten rauszufiltern und zu analysieren. Somit können Hypothesen bestätigt oder widerlegt werden und dadurch können Entscheidungen über den weiteren Verlauf der Studie getroffen werden. 
+Nach der Auswertung der Onlineumfragen werden quantitative Analysemethoden verwendet, darunter statistische Verfahren wie t-Test und Korrelation. Diese Methoden dienen der Untersuchung von den ausgewählten Variablen, um fundierte Erkenntnisse aus den Umfragedaten zu gewinnen. Der t-Test stellt fest, ob es einen signifikanten Unterschied zwischen den Mittelwerten von zwei Gruppen gibt. Die Korrelation hingegen misst den Zusammenhang zwischen zwei Variablen und zeigt, in welchem Ausmaß sich Veränderungen einer Variable auf die andere Variable auswirkt. Beide Methoden werden somit verwendet, um Beziehungen und Muster in den Daten rauszufiltern und zu analysieren. Somit können Hypothesen bestätigt oder widerlegt werden und dadurch können Entscheidungen über den weiteren Verlauf der Studie getroffen werden.
 
-Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein entscheidener Faktor bei der Konzipierung von KI-Tools zur Dedektion von Misinformationen ist und ob es in Hinblick dessen, Zusammenhänge zwischen dem Alter und unter anderem der Techniaffinität oder dem Vertrauen gegenüber solcher KI-Tools gibt. Damit stellt sich die Frage, wie dynamisch und/oder individuell solche KI-Tools aufgebaut werden müsssen damit diese über Altersgrenzen hinweg funktionieren und verstanden werden. 
+Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein entscheidener Faktor bei der Konzipierung von KI-Tools zur Dedektion von Misinformationen ist und ob es in Hinblick dessen, Zusammenhänge zwischen dem Alter und unter anderem der Techniaffinität oder dem Vertrauen gegenüber solcher KI-Tools gibt. Damit stellt sich die Frage, wie dynamisch und/oder individuell solche KI-Tools aufgebaut werden müsssen damit diese über Altersgrenzen hinweg funktionieren und verstanden werden.
 
 # 4 Ergebnisse
 
@@ -110,7 +104,7 @@ Grundlegend stellen wir uns primär die Frage, ob das Alter eines Menschens ein 
 Aus der thematischen Analyse der Transkripte ergeben sich folgende Themen, die relevant für unsere Forschungsfrage sind: Misinformationen, Eigenschaften, Grenzen, Verantwortung und Transparenz.
 
 | Name                              | Definition                                                                                    | Beleg                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|------------------------|------------------------|------------------------|
+|-----------|-----------|--------------------------------------------------|
 | Misinformationen auf Social Media | Notwendigkeit eines KI-Tools, das Informationen im Internet beurteilt und dessen Nützlichkeit | „Ehm, gerade auf Seiten wie Instagram und Tiktok, wo jeder posten kann was er will, muss man vorsichtig sein und darf nicht alles glauben, was einem präsentiert wird, da viele mit oder ohne Absicht andere beeinflussen, indem sie ihre Meinung verbreiten, weil diese von vielen sofort als Wahrheit angenommen wird.“ (A2_5, Zeile 45-49) „Ein ausreichend trainiertes KI System kann natürlich dabei helfen, schnell und ohne menschliches Eingreifen Misinformationen zu spotten und als solche zu flaggen, was es natürlich auch dem endgültigen User einfacher macht, Desinformation von tatsächlichen Fakten zu unterscheiden.“ (A2_4, Zeile 67-71) |
 | Eigenschaften des KI-Tools        | Anforderungen an das KI-Tool, damit es zufriedenstellend und zielführend benutzbar ist        | „Es muss natürlich korrekt sein, also es muss ja schon auf jeden Fall richtig funktionieren.“ (A2_3, Zeile 45-46) „Okay, also ich sprach ja von einem Label und ich stelle mir da so einen Popup-Button vor, dass man da unten in der Mitte vom Screen zum Beispiel sieht man einen Popup-Button, da steht ‚Hierbei handelt es sich wahrscheinlich um Misinformation‘, dann klicken wir da drauf und wunderbar wäre es natürlich, wenn thematisch das aufgegriffen wird, wobei es sich um Misinformation handle und das versucht wird mit Fakten zu unterstützen.“ (A2_1, Zeile 104-110)                                                                     |
 | Grenzen und Sorgen                | Grad, bis zu dem so ein System wirklich helfen und funktionieren kann                         | Es kam die Frage auf, ob die Kennzeichnung von Fake News tatsächlich dabei helfen würde, Bewusstsein zu schaffen oder ob die Fronten doch nur verhärtet würden. (vgl. A2_3, Zeile 142-145) „Und deshalb denke ich, dass noch viel daran gearbeitet werden muss, dass so was halt wirklich ernst genommen werden kann, weil KI halt noch nicht alles versteht und deshalb auch oft falsche Antworten liefert.“ (A2_2, Zeile 95-98)                                                                                                                                                                                                                            |
@@ -131,36 +125,33 @@ Als letztes geht es noch um das Thema „Transparenz des KI-Tools“. Man soll a
 
 ### 4.2.1 Stichprobe
 
-Insgesamt haben 125 Personen an der Online-Studie teilgenommen. Die dabei für die Analyse zu berücksichtigen Daten beinhalten die von 119 Teilnehmenden (*n =* 119). Zu den Personen, die herausgefiltert wurden, gehören eine Person, welche unter 18 Jahren ist und deswegen nicht berücksichtigt werden kann. Zudem fünf weitere Datensätze, die einer Testgruppe angehören. 
+Insgesamt haben 125 Personen an der Online-Studie teilgenommen. Die dabei für die Analyse zu berücksichtigen Daten beinhalten die von 119 Teilnehmenden (*n =* 119). Zu den Personen, die herausgefiltert wurden, gehören eine Person, welche unter 18 Jahren ist und deswegen nicht berücksichtigt werden kann. Zudem fünf weitere Datensätze, die einer Testgruppe angehören.
 
 Abgesehen davon haben die Teilnehmenden ein Durchschnittsalter von 26.7 Jahren (*M =* 26.7), wobei die Standardabweichung einen Wert von (*SD =* 11) hat. Auch, liegt das niedrigste Alter bei 18 Jahren (*n =* 5) und das höchste Alter bei 59 (*n =* 1).
 
-Die Geschlechterverteilung der Teilnehmenden sieht folgendermaßen aus: 44.5 % der Teilnehmenden sind weiblich, 53.8 % sind männlich und 1.7 % gaben ein nicht binäres Geschlecht an. 
+Die Geschlechterverteilung der Teilnehmenden sieht folgendermaßen aus: 44.5 % der Teilnehmenden sind weiblich, 53.8 % sind männlich und 1.7 % gaben ein nicht binäres Geschlecht an.
 
-Weitere für uns interessante soziodemografische Daten sind der höchste allgemeinbildende Schulabschluss und der höchste berufliche Abschluss. Mit 92.4 % hat die große Mehrheit der Teilnehmenden das Abitur, eine allgemeine oder fachgebundene Hochschulreife, einen erweiterten Oberschulabschluss oder eine Fachhochschulreife bzw. einen Abschluss der Fachoberschule. 5.9 % gaben an, die Realschule oder die Polytechnische Oberschule besucht zu haben bzw. die Mittlere Reife oder einen Mittleren Schulabschluss zu haben. Jeweils 0.8 % haben die Haupt- oder Volksschule besucht oder den Abschluss nach höchstens sieben Schuljahren gemacht. 
+Weitere für uns interessante soziodemografische Daten sind der höchste allgemeinbildende Schulabschluss und der höchste berufliche Abschluss. Mit 92.4 % hat die große Mehrheit der Teilnehmenden das Abitur, eine allgemeine oder fachgebundene Hochschulreife, einen erweiterten Oberschulabschluss oder eine Fachhochschulreife bzw. einen Abschluss der Fachoberschule. 5.9 % gaben an, die Realschule oder die Polytechnische Oberschule besucht zu haben bzw. die Mittlere Reife oder einen Mittleren Schulabschluss zu haben. Jeweils 0.8 % haben die Haupt- oder Volksschule besucht oder den Abschluss nach höchstens sieben Schuljahren gemacht.
 
-Des Weiteren haben 55.5 % der Teilnehmenden (noch) keinen beruflichen Abschluss. 7.6 % haben dafür aber eine Lehre absolviert und 6.7 % eine Ausbildung. Die Fachschule haben 0.8 % der Teilnehmenden besucht und 5 % die Fachhochschule oder Ingenieurschule. Zuletzt gaben 24.4 % an, an einer Universität oder einer Hochschule den Abschluss gemacht zu haben. 
+Des Weiteren haben 55.5 % der Teilnehmenden (noch) keinen beruflichen Abschluss. 7.6 % haben dafür aber eine Lehre absolviert und 6.7 % eine Ausbildung. Die Fachschule haben 0.8 % der Teilnehmenden besucht und 5 % die Fachhochschule oder Ingenieurschule. Zuletzt gaben 24.4 % an, an einer Universität oder einer Hochschule den Abschluss gemacht zu haben.
 
-Des Weiteren haben auch die Daten zur Nutzung sozialer Medien unter den Probanden eine Relevanz für unsere Forschung.  Dabei nutzen 88.2 % der Teilnehmenden täglich soziale Medien, wie WhatsApp, Instagram und Facebook. 10.1 % nutzen sie mehrmals pro Woche und 0.8 % mehrmals im Monat. Ebenfalls gaben 0.8 % an, sie nie zu benutzen. 
-
-
+Des Weiteren haben auch die Daten zur Nutzung sozialer Medien unter den Probanden eine Relevanz für unsere Forschung. Dabei nutzen 88.2 % der Teilnehmenden täglich soziale Medien, wie WhatsApp, Instagram und Facebook. 10.1 % nutzen sie mehrmals pro Woche und 0.8 % mehrmals im Monat. Ebenfalls gaben 0.8 % an, sie nie zu benutzen.
 
 ### 4.2.1 Deskriptive Statistik
+
 Wir betrachten in unserer Analyse der Daten die ATI-Skala, die HCT-Skala und die SUS-Skala.
 
 Grundsätzlich liegt die Standardabweichung aller Skalen zwischen den Bereichen 1.1 und 0.6. Wir haben somit kleinere Standardabweichungen, die darauf hinweisen, dass die Ergebnisse der Probanden sehr nah an ihren Mittelwerten liegen und daher eine hohe Konsistenz in ihrer Bedeutung vorliegt.
 
-Der Alpha-Wert ist weiterhin bei allen Skalen hoch, sprich die Alpha-Werte liegen im Bereich zwischen 0 und 1. Daraus folgt, dass wir eine hohe interne Konsistenz der Messungen vorliegen haben. 
+Der Alpha-Wert ist weiterhin bei allen Skalen hoch, sprich die Alpha-Werte liegen im Bereich zwischen 0 und 1. Daraus folgt, dass wir eine hohe interne Konsistenz der Messungen vorliegen haben.
 
-Der Median weist in allen Skalen nur minimale Abstände zum durchschnittlichen Wert vor. Die Daten sind somit ungefähr symmetrisch um den Mittelwert verteilt. Es befinden sich daher keine Ausreißer oder extremen Werte, die den Durchschnitt stark verändern im Datensatz. 
+Der Median weist in allen Skalen nur minimale Abstände zum durchschnittlichen Wert vor. Die Daten sind somit ungefähr symmetrisch um den Mittelwert verteilt. Es befinden sich daher keine Ausreißer oder extremen Werte, die den Durchschnitt stark verändern im Datensatz.
 
-Die 9-Item-Skala zur Affinität für Technologie-Interaktion (ATI) misst die Neigung einer Person, sich aktiv mit intensiver Technologie-Interaktion zu beschäftigen oder diese zu meiden, und wird als wichtige persönliche Ressource für den erfolgreichen Umgang mit Technologie betrachtet.
-Bei unserer Studie liegt die durchschnittliche Technikaffinität der Teilnehmenden bei (*M =* 3.6, *SD =* 1.1). Die ATI-Skala hat einen möglichen Maximalwert von 6. Die Probanden besitzen dementsprechend weder eine besonders hohe, noch eine besonders niedrige Tendenz zur Technikaffinität. 
+Die 9-Item-Skala zur Affinität für Technologie-Interaktion (ATI) misst die Neigung einer Person, sich aktiv mit intensiver Technologie-Interaktion zu beschäftigen oder diese zu meiden, und wird als wichtige persönliche Ressource für den erfolgreichen Umgang mit Technologie betrachtet. Bei unserer Studie liegt die durchschnittliche Technikaffinität der Teilnehmenden bei (*M =* 3.6, *SD =* 1.1). Die ATI-Skala hat einen möglichen Maximalwert von 6. Die Probanden besitzen dementsprechend weder eine besonders hohe, noch eine besonders niedrige Tendenz zur Technikaffinität.
 
-Um herauszufinden, wie sehr eine Person einem Computer oder einem System vertraut, wird die HCT-Skala (engl. Human Computer Trust) benutzt. Dies wird anhand der Indikatoren Kompetenz, wahrgenommene Zuverlässigkeit und der wahrgenommenen Verständlichkeit abgeleitet. Der Score wurde für die 2 unterschiedlichen Tools erfasst, wobei die Tools den Probanden in jeweils zufälliger Reihenfolge gezeigt wurden. HC1T hat dabei ein durchschnittliches Vertrauen von (*M =* 3.9, *SD =* 1) und HC2T ein durchschnittliches Vertrauen, welches bei (*M =* 4.1, *SD =* 0.9) liegt. Die HCT-Skala hat einen möglichen Maximalwert von 6. Insgesamt lässt sich daraus folgern, dass die Probanden beiden Systemen  gegenüber ein tendenziell höheres Vertrauen aufweisen, es aber leichte Abweichungen gibt, welche vermutlich auf die Zufälligkeit der Zuordnung und der unterschiedlichen Einschätzungen der beiden KI-Tools zurückzuführen sind.
+Um herauszufinden, wie sehr eine Person einem Computer oder einem System vertraut, wird die HCT-Skala (engl. Human Computer Trust) benutzt. Dies wird anhand der Indikatoren Kompetenz, wahrgenommene Zuverlässigkeit und der wahrgenommenen Verständlichkeit abgeleitet. Der Score wurde für die 2 unterschiedlichen Tools erfasst, wobei die Tools den Probanden in jeweils zufälliger Reihenfolge gezeigt wurden. HC1T hat dabei ein durchschnittliches Vertrauen von (*M =* 3.9, *SD =* 1) und HC2T ein durchschnittliches Vertrauen, welches bei (*M =* 4.1, *SD =* 0.9) liegt. Die HCT-Skala hat einen möglichen Maximalwert von 6. Insgesamt lässt sich daraus folgern, dass die Probanden beiden Systemen gegenüber ein tendenziell höheres Vertrauen aufweisen, es aber leichte Abweichungen gibt, welche vermutlich auf die Zufälligkeit der Zuordnung und der unterschiedlichen Einschätzungen der beiden KI-Tools zurückzuführen sind.
 
 Mithilfe der SUS-Skala kann man ermitteln, wie gebrauchstauglich ein System ist. Die Gebrauchstauglichkeit unserer KI-Systeme wurden durch die Teilnehmenden durchschnittlich mit (*M =* 3.9, *SD =* 0.6) bewertet. Im Allgemeinen lässt sich daraus erkennen, dass die Probanden mit der Gebrauchstauglichkeit der KI-Tools zufrieden sind, man aber aus dem Wert 5, welcher als höchstmöglicher Wert gilt, der vergeben werden kann, darauf schließen kann, dass es Raum für Verbesserung gibt.
-
 
 ```{r}
 #| echo: false
@@ -168,38 +159,28 @@ Mithilfe der SUS-Skala kann man ermitteln, wie gebrauchstauglich ein System ist.
 #| warning: false
 
 
+library(ggplot2)
 library(dplyr)
 library(tidyr)
+library(scales)
 library(psych)
+library(kableExtra)
+library(knitr)
 
 ergebnissurvey <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-18/surveydata.csv")
 
 ergebnisapp <- read.csv("/Users/vanessa/Documents/UNI/Semester II/Statisktik und Nutzerforschung/2024-06-18/appdata.csv")
 
+#Erstes Filtern nach dem Alter 
 ergebnissurvey <- ergebnissurvey %>%
   filter(age >= 18 & age < 120 & groupId != "42")
-#---------------------------------------------------------------
-#Teil 1 Filtern und Data Wrangling
 
-
-#appdatasummarize_unique1 <- ergebnisapp %>%
- # group_by(user_id) %>%
-  #summarize(across(everything(), first))
-#wegen diesem many to many relationship Ding 
-
-#datengesamt <- gefilterte_daten %>%
- #full_join(appdatasummarize_unique1, by =  c("userId" = "user_id"))
-
-#datengesamt <- datengesamt %>%
- #       select(starts_with("ATI")) %>%
-  #      psych::alpha(check.keys = TRUE)
-
-
-#---------------------------------------------------------------
 #Teil 2 Stichprobe
 # 2.1 Geschlechterverteilung 
 
 n <- nrow(ergebnissurvey)
+
+
 
 gender_count <- ergebnissurvey %>%
   group_by(gender) %>%
@@ -293,10 +274,6 @@ smfrequency5 = smfrequency_count %>%
   filter(smfrequency == "5") %>%
   summarise(Percentage = (Frequency/n)*100)
 
-
-
-
-
   
 #---------------------------------------------------------------
 #2.4 Alter
@@ -305,14 +282,22 @@ stichprobenbeschreibung <- ergebnissurvey %>% summarise(n = nrow(ergebnissurvey)
 
 #stichprobenbeschreibung
 
-sd_age <- sd(ergebnissurvey$age)
-#sd_age
+sd_age <- round(sd(ergebnissurvey$age),2)
+meann <- round(mean(ergebnissurvey$age),2)
+mediann <- round(median(ergebnissurvey$age),2)
+maxn <- round(max(ergebnissurvey$age),2)
+minn <- round(min(ergebnissurvey$age),2)
+
+tabelle_scorez <- rbind(meann, mediann, maxn,minn,sd_age )
+row.names(tabelle_scorez) <- c("Mean", "Median", "Max", "Min","Sd" )
+knitr::kable(tabelle_scorez, caption = "Altersübersicht")
+
 
                                                                                                     
-
 #---------------------------------------------------------------
 
 #Teil 3 
+#Zusammenfügen von ergebnisapp und ergebnissurvey 
 
 ergebnisapp <- ergebnisapp %>% group_by(user_id) %>%
     mutate(first_variant = first(variant))
@@ -333,13 +318,30 @@ ergebnissurvey <- rename(ergebnissurvey, user_id = userId)
 
 ergebnissurvey <- ergebnissurvey %>% left_join(appdatasummarize, by = "user_id", relationship = "many-to-many")
 
-#-----------------------------------------------------------------------------
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| label: tbl-skalen
+#| tbl-cap: "Deskriptive Statistik für ATI, HCT und SUS"
+#| tbl-cap-location: top
+#| warning: false
 
 
+deskriptive_statistik <- function(data, scale_name) {
 
-#------------------------------------------------------------------
-
-
+  filtered_data <- data %>% filter(!is.na(data[[scale_name]]))
+  
+  n <- nrow(filtered_data)  
+    alpha <- round(psych::alpha(filtered_data %>% select(any_of(keys[[scale_name]])), check.keys = TRUE)$total$raw_alpha, 2)
+  mean_val <- round(mean(filtered_data[[scale_name]], na.rm = TRUE),2)
+  median_val <- round(median(filtered_data[[scale_name]], na.rm = TRUE),2)
+  min_val <- round(min(filtered_data[[scale_name]], na.rm = TRUE),2)
+  max_val <- round(max(filtered_data[[scale_name]], na.rm = TRUE),2)
+  sd_val <- round(sd(filtered_data[[scale_name]], na.rm = TRUE),2)
+  return(data.frame(n = n, alpha = alpha, mean = mean_val, median = median_val, min = min_val, max = max_val, sd = sd_val))
+}
 
 keys_ATI <- list(ATI = c("ATI.1.", "ATI.2.","-ATI.3.","ATI.4.","ATI.5.","-ATI.6.","ATI.7.","-ATI.8.","ATI.9."))
 scored <- psych::scoreItems(keys_ATI, ergebnissurvey)
@@ -353,53 +355,49 @@ keys_HCT2 <- list(HCT2T = c("HCT2T.01.","HCT2T.02.","HCT2T.03.","HCT2T.04.","HCT
 scored <- psych::scoreItems(keys_HCT2, ergebnissurvey)
 ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
 
+
 keys_SUS <- list(SUS = c("SUS.1.","-SUS.2.", "SUS.3.", "-SUS.4.", "SUS.5.", "-SUS.6.", "SUS.7.", "-SUS.8.", "SUS.9.", "-SUS.10."))
 scored <- psych::scoreItems(keys_SUS, ergebnissurvey)
 ergebnissurvey <- ergebnissurvey %>% cbind(scored$scores)
 
 
 
-ergebnissurvey <- ergebnissurvey %>% mutate(HCT_E = ifelse(first_variant == "eva-ai", HCT1T, HCT2T ))
-ergebnissurvey <- ergebnissurvey %>% mutate(HCT_R = ifelse(first_variant == "rd-ai", HCT1T, HCT2T ))
+# Zuordnen der SIPA 1 und 2 zu den jeweiligen KI Tools
+ergebnissurvey <- ergebnissurvey  %>%
+  mutate(HCT_E = ifelse(first_variant == 'eva-ai', HCT1T, HCT2T),
+         HCT_R = ifelse(first_variant == 'rd-ai', HCT1T, HCT2T))
 
+# SUS-Werte basierend auf der zuerst gesehenen Anwendung zuweisen
+ergebnissurvey <- ergebnissurvey %>%
+  mutate(SUS_E = ifelse(first_variant == 'rd-ai', SUS, NA),
+         SUS_R = ifelse(first_variant == 'eva-ai', SUS, NA))
 
-deskriptive_statistik <- function(data, scale_name) {
-  n <- nrow(ergebnissurvey)
-  alpha <- round(psych::alpha(data %>% select(starts_with(scale_name)), check.keys = TRUE)$total$raw_alpha,2)
-  mean_val <- round(mean(data[[scale_name]], na.rm = TRUE),2)
-  median_val <- round(median(data[[scale_name]], na.rm = TRUE),2)
-  min_val <- round(min(data[[scale_name]], na.rm = TRUE),2)
-  max_val <- round(max(data[[scale_name]], na.rm = TRUE),2)
-  sd_val <- round(sd(data[[scale_name]], na.rm = TRUE),2)
-  return(data.frame(n = n, alpha = alpha, mean = mean_val, median = median_val, min = min_val, max = max_val, sd = sd_val))
-}
+# Schlüssel für Cronbachs Alpha
+keys <- list(
+  ATI = c("ATI.1.", "ATI.2.", "-ATI.3.", "ATI.4.", "ATI.5.", "-ATI.6.", "ATI.7.", "-ATI.8.", "ATI.9."),
+  HCT_E = c("HCT1T.01.","HCT1T.02.","HCT1T.03.","HCT1T.04.","HCT1T.05."),
+  HCT_R = c("HCT2T.01.","HCT2T.02.","HCT2T.03.","HCT2T.04.","HCT2T.05."),
+   SUS_E = c("SUS.1.", "-SUS.2.", "SUS.3.", "-SUS.4.", "SUS.5.", "-SUS.6.", "SUS.7.", "-SUS.8.", "SUS.9.", "-SUS.10."),
+  SUS_R = c("SUS.1.", "-SUS.2.", "SUS.3.", "-SUS.4.", "SUS.5.", "-SUS.6.", "SUS.7.", "-SUS.8.", "SUS.9.", "-SUS.10."))
 
-```
-
-```{r}
-#| echo: false
-#| message: false
-#| label: tbl-skalen
-#| tbl-cap: "Deskriptive Statistik für ATI, HCT und SUS"
-#| tbl-cap-location: top
-#| warning: false
-
-#Tabelle für die verschiedenen Scores
-
+# Berechnung der deskriptiven Statistik für die verschiedenen Skalen
 ati_werte <- deskriptive_statistik(ergebnissurvey, "ATI")
-hct1_werte <- deskriptive_statistik(ergebnissurvey, "HCT1T")
-hct2_werte <- deskriptive_statistik(ergebnissurvey, "HCT2T")
-sus_werte <- deskriptive_statistik(ergebnissurvey, "SUS")
+hct_E_werte <- deskriptive_statistik(ergebnissurvey, "HCT_E")
+hct_R_werte <- deskriptive_statistik(ergebnissurvey, "HCT_R")
+sus_E_werte <- deskriptive_statistik(ergebnissurvey, "SUS_E")
+sus_R_werte <- deskriptive_statistik(ergebnissurvey, "SUS_R")
 
-tabelle_scores <- rbind(ati_werte, hct1_werte, hct2_werte, sus_werte)
-row.names(tabelle_scores) <- c("ATI", "HCT1T", "HCT2T", "SUS")
+
+
+tabelle_scores <- rbind(ati_werte, hct_E_werte, hct_R_werte,sus_E_werte,sus_R_werte )
+row.names(tabelle_scores) <- c("ATI", "HCT_E", "HCT_R", "SUS_E","SUS_R" )
 knitr::kable(tabelle_scores, caption = "Diskriptive Statistik für ATI, HCT und SUS")
 
 ```
 
-
 ### 4.2.1 Inferenzstatistik
-Grundsätzlich wollten wir untersuchen, ob es einen Zusammenhang zwischen der Technikaffinität, also dem ATI-Score und dem Alter der Probanden gibt. 
+
+Grundsätzlich wollten wir untersuchen, ob es einen Zusammenhang zwischen der Technikaffinität, also dem ATI-Score und dem Alter der Probanden gibt.
 
 ```{r}
 #| echo: false
@@ -425,24 +423,24 @@ mean_ati_young <- mean(ati[ati$age < mean_age,"ATI_mean"])
 
 mean_ati_old <- mean(ati[ati$age >= mean_age, "ATI_mean"]) 
 
+cor5 <- cor.test(ergebnissurvey$age, ergebnissurvey$ATI)
+#cor5
 
-# Scatterplot erstellen
-ggplot(ati, aes(x = age, y = ATI_mean)) +
-  geom_point(alpha = 0.6) +
-  geom_smooth(method = "lm", color = "royalblue", se = FALSE) +
-  labs(
+ageati <- ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$ATI)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = TRUE, color = "royalblue") +
+  labs(title = "Korrelation zwischen Alter und dem ATI-Score",
        x = "Alter",
-       y = "ATI-Score") +
-  theme_minimal()
+       y = "ATI-Score")
+
+print(ageati)
+
 ```
 
-#### 4.2.1.1 Durchführung des t-tests 
+#### 4.2.1.1 Durchführung des t-tests
 
-Desweiteren wollten untersuchen, ob es bei der Präzision der richtigen Entscheidungen altersbezogene signifikante Unterschiede gibt. 
-Um die Unterschiede bezüglich des Alters zu vergleichen, haben wir zuerst einen Median-Split des Alters durchgeführt und unsere Daten in zwei Gruppen aufgeteilt: Eine Gruppe die jünger und eine die älter als der Median ist.
-Nach dieser Aufteilung konnten wir den t-Test für beide KIs durchführen. Da wir zwei Variablen, Alter und Präzision, und somit zwei voneinander losgelöste Gruppen miteinander vergleichen wollen, haben wir einen unabhängigen t-test durchgeführt damit wir feststellen können wie signifikant der Unterschied der beiden Gruppen ist.  
+Desweiteren wollten untersuchen, ob es bei der Präzision der richtigen Entscheidungen altersbezogene signifikante Unterschiede gibt. Um die Unterschiede bezüglich des Alters zu vergleichen, haben wir zuerst einen Median-Split des Alters durchgeführt und unsere Daten in zwei Gruppen aufgeteilt: Eine Gruppe die jünger und eine die älter als der Median ist. Nach dieser Aufteilung konnten wir den t-Test für beide KIs durchführen. Da wir zwei Variablen, Alter und Präzision, und somit zwei voneinander losgelöste Gruppen miteinander vergleichen wollen, haben wir einen unabhängigen t-test durchgeführt damit wir feststellen können wie signifikant der Unterschied der beiden Gruppen ist.\
 Eine Visualisierung dieser Ergebnisse ist in @fig-ttest zu sehen.
-
 
 ```{r}
 #| echo: false
@@ -515,7 +513,6 @@ t_test_precision_rd_ai <- t.test(median_age_young$`precision_rd-ai`, median_age_
 #t_test_precision_eva_ai
 #t_test_precision_rd_ai
 
-
 # Berechnung der Mittelwerte und Standardfehler für RD-AI
 mean_rd_old <- mean(median_age_old$`precision_rd-ai`)
 mean_rd_young <- mean(median_age_young$`precision_rd-ai`)
@@ -531,7 +528,6 @@ data_rd <- data.frame(
   se_precision = c(rep(se_rd_old, length(median_age_old$`precision_rd-ai`)), rep(se_rd_young, length(median_age_young$`precision_rd-ai`)))
 )
 
-
 # Berechnung der Mittelwerte und Standardfehler für EVA-AI
 mean_eva_old <- mean(median_age_old$`precision_eva-ai`)
 mean_eva_young <- mean(median_age_young$`precision_eva-ai`)
@@ -544,8 +540,7 @@ data_eva <- data.frame(
   precision = c(median_age_old$`precision_eva-ai`, median_age_young$`precision_eva-ai`),
   type = rep("EVA-AI", length(median_age_old$`precision_eva-ai`) + length(median_age_young$`precision_eva-ai`)),
   mean_precision = c(rep(mean_eva_old, length(median_age_old$`precision_eva-ai`)), rep(mean_eva_young, length(median_age_young$`precision_eva-ai`))),
-  se_precision = c(rep(se_eva_old, length(median_age_old$`precision_eva-ai`)), rep(se_eva_young, length(median_age_young$`precision_eva-ai`)))
-)
+  se_precision = c(rep(se_eva_old, length(median_age_old$`precision_eva-ai`)), rep(se_eva_young, length(median_age_young$`precision_eva-ai`))))
 
 # Zusammenführen der Daten für den gesamten Plot
 data_combined <- rbind(data_rd, data_eva)
@@ -567,47 +562,38 @@ plot +
   geom_errorbar(data = data_combined, aes(x = group, ymin = mean_precision - se_precision, ymax = mean_precision + se_precision), color = "tomato2", width = 0.2)
 
 ```
+
 #### 4.2.1.2 Auswertung des t-tests
+
 Bei der Evaluierenden KI (@fig-ttest) ergab der t-Test folgende Ergebnisse:
 
+-   *t =* 0.92
+-   *df =* 115.42
+-   *p =* 0.36
 
--    *t =* 0.92
--    *df =*  115.42
--    *p =* 0.36
-
-
-
-Da der p-Wert größer als 0.05 ist, bedeutet dies, dass der Unterschied in den Mittelwerten der Präzision zwischen den jüngeren und älteren Gruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 36.17 %, was weit über der üblichen Schwelle von 5 % liegt.
-Da es keinen signifikanten Unterschied in der Präzision der beiden Altersgruppen bei der evaluierenden KI gibt, ist nicht anzunehmen, dass das Alter einen Einfluss auf die Präzision beim Treffen von Entscheidungen hat.
-
+Da der p-Wert größer als 0.05 ist, bedeutet dies, dass der Unterschied in den Mittelwerten der Präzision zwischen den jüngeren und älteren Gruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 36.17 %, was weit über der üblichen Schwelle von 5 % liegt. Da es keinen signifikanten Unterschied in der Präzision der beiden Altersgruppen bei der evaluierenden KI gibt, ist nicht anzunehmen, dass das Alter einen Einfluss auf die Präzision beim Treffen von Entscheidungen hat.
 
 Bei der Recommender-KI (@fig-ttest) ergab der t-Test folgende Ergebnisse:
 
+-   *t =* 1.42
+-   *df =* 108.92
+-   *p =* 0.16
 
--    *t =* 1.42
--    *df =*  108.92
--    *p =* 0.16
+Auch hier ist der p-Wert größer als 0.05, was bedeutet, dass der Unterschied in der Präzision zwischen den Altersgruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 15.89 %, was ebenfalls über der Schwelle von 5 % liegt. Daher ist auch bei dieser KI nicht anzunehmen, dass es einen signifikanten Einfluss des Alters auf die Präzision der Entscheidungen gibt.
 
-
-Auch hier ist der p-Wert größer als 0.05, was bedeutet, dass der Unterschied in der Präzision zwischen den Altersgruppen nicht signifikant ist. Die Wahrscheinlichkeit, dass der beobachtete Unterschied zufällig ist, liegt bei etwa 15.89 %, was ebenfalls über der Schwelle von 5 % liegt. Daher ist auch bei dieser KI nicht anzunehmen, dass es einen signifikanten Einfluss des Alters auf die Präzision der Entscheidungen gibt. 
-
-
-
-Die t-Tests für beide KIs liefern also das gleiche Ergebnis, dass es keinen signifikanten Unterschied zwischen den beiden Altersgruppen bei der Präzision gibt. Beide Gruppen können also gleich gut beurteilen, ob es sich bei den präsentierten Informationen um die Wahrheit handelt oder nicht. 
-
+Die t-Tests für beide KIs liefern also das gleiche Ergebnis, dass es keinen signifikanten Unterschied zwischen den beiden Altersgruppen bei der Präzision gibt. Beide Gruppen können also gleich gut beurteilen, ob es sich bei den präsentierten Informationen um die Wahrheit handelt oder nicht.
 
 #### 4.2.1.3 Durchführung der Pearson-Korrelation in Hinblick auf Alter und HCT-Score
 
-Da wir uns in unserer Forschung besonders auf den Umgang verschiedener Altersgruppen mit den Systemen fokussieren, schauen wir uns den Zusammenhang zwischen dem Alter und dem HCT-Score, also dem Human-Computer-Trust genauer an. Um zu überprüfen, ob es hier tatsächlich eine relevanten Zusammenhang gibt, haben wir einen Pearson-Korrelationstest durchgeführt.
-Den Test haben wir sowohl für die Evaluierende AI als auch für die Recommender AI durchgeführt und auch diese in den @fig-cor1test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden AI) und @fig-cor2test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI) visuell dargestellt.
+Da wir uns in unserer Forschung besonders auf den Umgang verschiedener Altersgruppen mit den Systemen fokussieren, schauen wir uns den Zusammenhang zwischen dem Alter und dem HCT-Score, also dem Human-Computer-Trust genauer an. Um zu überprüfen, ob es hier tatsächlich eine relevanten Zusammenhang gibt, haben wir einen Pearson-Korrelationstest durchgeführt. Den Test haben wir sowohl für die Evaluierende AI als auch für die Recommender AI durchgeführt und auch diese in den @fig-cor1test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden AI) und @fig-cor2test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI) visuell dargestellt.
 
-#### 4.2.1.4 Auswertung der Pearson-Korrelation 
+#### 4.2.1.4 Auswertung der Pearson-Korrelation
 
-Die Analyse der Evaluierenden KI ergab einen signifikanten Zusammenhang mit einem t-Wert von -2,1155 und einem p-Wert von 0,03617. Dies deutet darauf hin, dass das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert ist (*p <* 0,05). Der berechnete Korrelationskoeffizient von -0,1766103 zeigt an, dass ein höheres Alter tendenziell mit einem niedrigeren HCT-Score verbunden ist. 
+Die Analyse der Evaluierenden KI ergab einen signifikanten Zusammenhang mit einem t-Wert von -2,1155 und einem p-Wert von 0,03617. Dies deutet darauf hin, dass das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert ist (*p \<* 0,05). Der berechnete Korrelationskoeffizient von -0,1766103 zeigt an, dass ein höheres Alter tendenziell mit einem niedrigeren HCT-Score verbunden ist.
 
-Der Test zur Recommender KI liefert ebenfalls einen signifikanten Zusammenhang, mit einem t-Wert von -3,1246 und einem p-Wert von 0,002168. Auch hier war das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert. Der Korrelationskoeffizient in diesem Fall betrug -0,2561782, was erneut darauf hinweist, dass ältere Probanden tendenziell niedrigere HCT-Scores aufwiesen. 
+Der Test zur Recommender KI liefert ebenfalls einen signifikanten Zusammenhang, mit einem t-Wert von -3,1246 und einem p-Wert von 0,002168. Auch hier war das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert. Der Korrelationskoeffizient in diesem Fall betrug -0,2561782, was erneut darauf hinweist, dass ältere Probanden tendenziell niedrigere HCT-Scores aufwiesen.
 
-In beiden Analysen zeigte sich somit konsistent, dass das Alter der Probanden einen signifikanten Einfluss auf ihren HCT-Score hat, wobei ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. 
+In beiden Analysen zeigte sich somit konsistent, dass das Alter der Probanden einen signifikanten Einfluss auf ihren HCT-Score hat, wobei ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten.
 
 ```{r}
 #| echo: false
@@ -618,6 +604,7 @@ library(dplyr)
 library(tidyr)
 library(psych)
 library(ggplot2)
+
 
 # Berechnung der Mittelwerte für verschiedene Gruppen
 mean_values <- ergebnissurvey %>%
@@ -636,8 +623,6 @@ tabelle_scores <- mean_values %>%
 knitr::kable(tabelle_scores, caption = "Deskriptive Statistik für HCT E und HCT R")
 ```
 
-
-
 ```{r}
 #| echo: false
 #| message: false
@@ -652,11 +637,11 @@ library(ggplot2)
 
 
 cor1 <- cor.test(ergebnissurvey$age, ergebnissurvey$HCT_E)
-cor1
+#cor1
 
 ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT_E)) +
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE) +
+  geom_smooth(method = "lm", se = TRUE,color = "royalblue") +
   labs(title = "Korrelation zwischen Alter und HCT-Score der Eva-Ai",
        x = "Alter",
        y = "HCT-Score")
@@ -667,22 +652,23 @@ ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT_E)) +
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI"
+#| fig-cap: "Korrelation zwischen dem Alter der Probanden und dem HCT-Score der RD-AI"
 #| label: fig-cor2test
 
 cor2 <- cor.test(ergebnissurvey$age, ergebnissurvey$HCT_R)
-cor2
+#cor2
 
 ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT_R)) +
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE) +
-  labs(title = "Korrelation zwischen Alter und HCT-Score der Recommender AI",
+  geom_smooth(method = "lm", se = TRUE,color = "royalblue") +
+  labs(title = "Korrelation zwischen Alter und HCT-Score der RD-AI",
        x = "Alter",
        y = "HCT-Score")
 
 ```
 
 #### 4.2.1.5 Durchführung der Pearson-Korrelation in Hinblick auf Alter und SUS-Score
+
 ```{r}
 #| echo: false
 #| message: false
@@ -697,28 +683,43 @@ library(ggplot2)
 
 
 cor3 <- cor.test(ergebnissurvey$age, ergebnissurvey$SUS)
-cor3
+#cor3
 
 ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$SUS)) +
   geom_point() +
-  geom_smooth(method = "lm", se = TRUE) +
+  geom_smooth(method = "lm", se = TRUE,color = "royalblue") +
   labs(title = "Korrelation zwischen Alter und SUS-Score",
        x = "Alter",
        y = "SUS-Score")
 
 ```
 
-
-
 #### 4.2.1.6 Abschließende Zusammenfassung der Inferenzstatistik
 
-In unserer inferenzstatistischen Analyse konnten wir herausstellen, dass ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. Da das Vertrauen in die Systeme bei älteren Probanden niedriger ist, ließe sich vermuten, dass sich dies auch auf den Umgang und schließlich die Präzision der Einschätzung auswirkt. Hier konnten wir mit unserem t-Test allerdings keinen signifikanten Zusammenhang erkennen. Aktuell scheinen also sowohl ältere als auch jüngere Probanden unabhängig vom Vertrauen in das System die gleichen Ergebnisse zu erzielen. 
-
-
-
-
+In unserer inferenzstatistischen Analyse konnten wir herausstellen, dass ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. Da das Vertrauen in die Systeme bei älteren Probanden niedriger ist, ließe sich vermuten, dass sich dies auch auf den Umgang und schließlich die Präzision der Einschätzung auswirkt. Hier konnten wir mit unserem t-Test allerdings keinen signifikanten Zusammenhang erkennen. Aktuell scheinen also sowohl ältere als auch jüngere Probanden unabhängig vom Vertrauen in das System die gleichen Ergebnisse zu erzielen.
 
 # 5 Diskussion
+Das Ziel unserer Studie war es herauszufinden, ob das Alter eines Menschen ein entscheidender Faktor bei der Konzipierung von KI-Systemen zur Detektion von Misinformationen ist und ob dies weiterführend mit der Technikaffinität oder dem Vertrauen gegenüber technischen Systemen zusammenhängt. 
+Um diese Frage zu beantworten, haben wir zuerst Interviews und später eine Onlineumfrage durchgeführt und dabei versucht, Personen aus möglichst vielen Altersgruppen zu befragen. In dem Fragebogen wurden neben demographischen Daten zwei KI-Systeme vorgestellt, mit deren Hilfe die ProbandInnen einschätzen sollten, ob es sich bei den vorgelegten Informationen um Misinformation handelt. Uns lagen also die Daten zur Präzision der richtigen Einschätzung, sowie Scores wie ATI, HCT und SUS vor.
+Für unsere Auswertung haben wir die Ergebnisse dann in zwei Gruppen geteilt: ProbandInnen, die älter bzw. jünger als der Median sind. Daraufhin konnten wir feststellen, dass es zwar einen kleinen, aber nicht signifikanten Unterschied in den ATI-Scores gibt und auch die Präzision sich nicht wesentlich zwischen den beiden Gruppen unterscheidet. Lediglich in den HCT-Scores gab es eine signifikante Korrelation.
+
+In Bezug auf unsere Forschungsfrage lässt sich also sagen, dass ältere Menschen KI-Systemen  kritischer gegenüberstehen und diesen nicht so schnell Vertrauen schenken, wie jüngere Nutzer. Dieser Unterschied konnte vor allem bei der Evaluierenden-AI festgestellt werden, während das Vertrauen bei der Recommender-AI über alle Altersgruppen vergleichsweise gleich blieb. Älteren Menschen fällt es also schwieriger, der Evaluierenden-AI zu vertrauen. Allerdings wirkt sich dieses Missvertrauen nicht auf die Ergebnisse aus, die schlussendlich mit dieser KI erzielt wurden. Bei beiden KI-Systemen, gab es keinen signifikanten Unterschied in der Präzision zwischen den Altersklassen. Insofern scheint das Vertrauen in diese Systeme nicht zu beeinflussen, ob die Informationen am Ende richtig eingeschätzt werden.
+
+## 5.1 Implikationen
+Die Erkenntnisse dieser Studie untermauern allgemein bekannte Vermutungen, dass ältere Menschen eher misstrauischer gegenüber neuen technischen Systemen, wie zum Beispiel gegenüber KI, eingestellt sind als jüngere Menschen. Dieses Phänomen lässt sich auch auf andere technische Bereiche wie zum Beispiel Online-Banking und andere digitale Dienstleistungen übertragen.
+Überraschenderweise korreliert das Alter der Menschen jedoch nicht so stark mit der Präzision im Umgang mit KI-Systemen, wie vorher gedacht. Stärkeres Vertrauen in ein System ist also nicht gleichzusetzen mit besserem Umgang mit diesem System.
+Wenn man ein System konzipiert, muss man darauf achten, alle Menschengruppen anzusprechen und zu inkludieren. Man muss also die jeweiligen Bedürfnisse und Fähigkeiten von den verschiedenen Altersgruppen richtig einschätzen, um deren Akzeptanz und Nutzung zu fördern. Zudem könnte man zusätzlich versuchen, das Vertrauen der älteren Menschen zu erhöhen, indem man sie mehr in Testphasen von den Systemen heranzieht oder auch versucht, sie mehr in diese Richtung zu bilden. Unterschiedliche Einstellungen gegenüber Themen, wie zum Beispiel Technologien können zu einer Schere zwischen den Generationen führen. Im Hinblick darauf ist es erstrebenswert, älteren Menschen einen leichteren Zugang zu ermöglichen. Menschen sind generell eher abgeneigt gegenüber Systemen, denen sie nicht vertrauen oder die sie nicht so gut verstehen und bedienen können. Daraus folgt dann auch, dass sie sich davor scheuen, sich damit intensiver auseinanderzusetzen. 
+Auf den Ergebnissen basierend sollte der Fokus also darauf liegen, herauszufinden, wie das Vertrauen älterer Menschen in technische Systeme gestärkt werden kann. Mögliche Verbesserungsansätze könnten dabei die Transparenz, beziehungsweise die Nachvollziehbarkeit der Vorgehensweise und des Entscheidungsprozesses der KI-Systeme sein. Dies könnte das Vertrauen und somit auch die Akzeptanz dieser erhöhen. Dabei sollte besonders der Unterschied zwischen den beiden AI-Systemen analysiert werden, da wir hier bereits einen Unterschied feststellen konnten.
+
+## 5.2 Limitationen
+Unsere bisherige Umfrage hat an einer relativ kleinen Gruppe stattgefunden, in der insbesondere die Altersgruppen von 30 - 50 Jahren und Menschen über 60 Jahren nur sehr gering beteiligt waren, sodass eine vollständige Auswertung über alle Altersgruppen nicht möglich ist. So konnten wir bisher bereits eine erste Tendenz im Umgang mit KI-Systemen erlangen, allerdings noch keine detaillierte Analyse in kleineren Altersabschnitten durchführen. 
+Kleinere Gruppen könnten auch zu klareren Ergebnissen bei der Präzision führen, da bei unserer Altersspanne die Ergebnisse sich gegenseitig ausgleichen können. 
+Aus unseren Ergebnissen lässt sich bisher zwar ableiten, dass ältere Menschen der Recommender-AI mehr Vertrauen schenken als der Evaluierenden-AI, allerdings lässt sich nicht konkret spezifizieren, welche Elemente des Systems das Vertrauen weckt bzw. senkt. Um zukünftige Systeme zu entwickeln, wäre also eine detaillierte Analyse wichtig, um klare Eigenschaften der Systeme benennen zu können.
+
+
+## 5.3 Zukünftige Arbeit
+Für weitere Forschung wäre also eine Datenerhebung mit Probanden aus allen Altersgruppen sinnvoll, damit genauer analysiert werden kann, welche Altersgruppe welches Vertrauen in technische Systeme steckt. Weiterhin wäre interessant, ob es bei kleineren Gruppen möglicherweise doch Unterschiede in der Präzision gibt, die bei uns durch die großen Teilgruppen ausgeglichen wurden.
+Weiterhin sollten die Gründe des geringen Vertrauens genauer betrachtet werden, um die KI-Systeme auch wirklich an die Bedürfnisse der Nutzenden anpassen zu können. Dabei sollte der Fokus insbesondere auf ältere Altersgruppen gelegt werden, um dafür zu sorgen, dass alle Altersgruppen die Systeme mit gleichem Vertrauen nutzen können.
 
 # 6 Literaturverzeichnis
 

@@ -1,5 +1,5 @@
 ---
-title: "Missinformation auf Social Media: die Notwendigkeit zur Detektion"
+title: "Misinformation auf Social Media: die Notwendigkeit zur Detektion"
 author: 
   - Kaja Bartsch 
   - Zelda Becker
@@ -17,7 +17,7 @@ fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
 ---
 
-**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 3c821ee
+**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** f25499a
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)

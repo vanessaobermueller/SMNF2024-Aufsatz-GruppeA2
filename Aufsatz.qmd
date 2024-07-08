@@ -1,5 +1,5 @@
 ---
-title: "Was sind Nutzendenanforderungen an KI als Werkzeug zur Detektion von Misinformation auf Social Media? Wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?"
+title: "Missinformation auf Social Media: die Notwendigkeit zur Detektion"
 author: 
   - Kaja Bartsch 
   - Zelda Becker
@@ -17,7 +17,7 @@ fontsize: 12pt
 bibliography: "https://api.citedrive.com/bib/53a4a654-08eb-4d30-aa79-cc45a44d541d/references.bib?x=eyJpZCI6ICI1M2E0YTY1NC0wOGViLTRkMzAtYWE3OS1jYzQ1YTQ0ZDU0MWQiLCAidXNlciI6ICIxMDkzNSIsICJzaWduYXR1cmUiOiAiMzVhM2MyMjU0ODQ4NDBkNDI5NDI0NGFkYzBkMGQzOWNhOGEzYTU4YjQ5YTMzYjM4NGU2YmQ1OWUwOTMzMThlZCJ9"
 ---
 
-**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 3654615
+**GitHub Repository:** https://github.com/vanessaobermueller/SMNF2024-Aufsatz-GruppeA2.git **Fuer die Abgabe aktueller GitHub Hash:** 3c821ee
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
@@ -149,9 +149,9 @@ Der Median weist in allen Skalen nur minimale Abstände zum durchschnittlichen W
 
 Die 9-Item-Skala zur Affinität für Technologie-Interaktion (ATI) misst die Neigung einer Person, sich aktiv mit intensiver Technologie-Interaktion zu beschäftigen oder diese zu meiden, und wird als wichtige persönliche Ressource für den erfolgreichen Umgang mit Technologie betrachtet. Bei unserer Studie liegt die durchschnittliche Technikaffinität der Teilnehmenden bei (*M =* 3.6, *SD =* 1.1). Die ATI-Skala hat einen möglichen Maximalwert von 6. Die Probanden besitzen dementsprechend weder eine besonders hohe, noch eine besonders niedrige Tendenz zur Technikaffinität.
 
-Um herauszufinden, wie sehr eine Person einem Computer oder einem System vertraut, wird die HCT-Skala (engl. Human Computer Trust) benutzt. Dies wird anhand der Indikatoren Kompetenz, wahrgenommene Zuverlässigkeit und der wahrgenommenen Verständlichkeit abgeleitet. Der Score wurde für die 2 unterschiedlichen Tools erfasst, wobei die Tools den Probanden in jeweils zufälliger Reihenfolge gezeigt wurden. HC1T hat dabei ein durchschnittliches Vertrauen von (*M =* 3.9, *SD =* 1) und HC2T ein durchschnittliches Vertrauen, welches bei (*M =* 4.1, *SD =* 0.9) liegt. Die HCT-Skala hat einen möglichen Maximalwert von 6. Insgesamt lässt sich daraus folgern, dass die Probanden beiden Systemen gegenüber ein tendenziell höheres Vertrauen aufweisen, es aber leichte Abweichungen gibt, welche vermutlich auf die Zufälligkeit der Zuordnung und der unterschiedlichen Einschätzungen der beiden KI-Tools zurückzuführen sind.
+Um herauszufinden, wie sehr eine Person einem Computer oder einem System vertraut, wird die HCT-Skala (engl. Human Computer Trust) benutzt. Dies wird anhand der Indikatoren Kompetenz, wahrgenommene Zuverlässigkeit und der wahrgenommenen Verständlichkeit abgeleitet. Der Score wurde für die 2 unterschiedlichen Systeme erfasst, wobei die Systeme den Probanden in jeweils zufälliger Reihenfolge gezeigt wurden. Die Evaluierende-AI hat dabei ein durchschnittliches Vertrauen von (*M =* 3.91, *SD =* 0.93) und Recommender-AI ein durchschnittliches Vertrauen, welches bei (*M =* 4.08, *SD =* 0.96) liegt. Die HCT-Skala hat einen möglichen Maximalwert von 6. Insgesamt lässt sich daraus folgern, dass die Probanden beiden Systemen  gegenüber ein tendenziell höheres Vertrauen aufweisen, es aber leichte Abweichungen gibt, welche vermutlich auf die Zufälligkeit der Zuordnung und der unterschiedlichen Einschätzungen der beiden KI-Systeme zurückzuführen sind. Insgesamt ist das durchschnittliche Vertrauen in die Recommender-AI höher als das in die Evaluierende-AI.
 
-Mithilfe der SUS-Skala kann man ermitteln, wie gebrauchstauglich ein System ist. Die Gebrauchstauglichkeit unserer KI-Systeme wurden durch die Teilnehmenden durchschnittlich mit (*M =* 3.9, *SD =* 0.6) bewertet. Im Allgemeinen lässt sich daraus erkennen, dass die Probanden mit der Gebrauchstauglichkeit der KI-Tools zufrieden sind, man aber aus dem Wert 5, welcher als höchstmöglicher Wert gilt, der vergeben werden kann, darauf schließen kann, dass es Raum für Verbesserung gibt.
+Mithilfe der SUS-Skala kann man ermitteln, wie gebrauchstauglich ein System ist. Die Gebrauchstauglichkeit der Evaluierenden-AI wurde durch die Teilnehmenden durchschnittlich mit (*M =* 3.98, *SD =* 0.66) bewertet. Die Recommender-AI wurde mit (*M =* 3.86 und *SD =* 0.57) bewertet. Im Allgemeinen lässt sich daraus erkennen, dass die Probanden mit der Gebrauchstauglichkeit der KI-Systeme zufrieden sind, der höchstmögliche Wert von 5 lässt aber darauf schließen, dass es Raum für Verbesserung gibt. Im Vergleich hat die Evaluierende-AI etwas besser abgeschnitten als die Recommender-AI. Dieser Unterschied liegt allerdings nur bei 0.12, ist also relativ gering.
 
 ```{r}
 #| echo: false
@@ -282,15 +282,15 @@ stichprobenbeschreibung <- ergebnissurvey %>% summarise(n = nrow(ergebnissurvey)
 
 #stichprobenbeschreibung
 
-sd_age <- round(sd(ergebnissurvey$age),2)
-meann <- round(mean(ergebnissurvey$age),2)
-mediann <- round(median(ergebnissurvey$age),2)
-maxn <- round(max(ergebnissurvey$age),2)
-minn <- round(min(ergebnissurvey$age),2)
+#sd_age <- round(sd(ergebnissurvey$age),2)
+#meann <- round(mean(ergebnissurvey$age),2)
+#mediann <- round(median(ergebnissurvey$age),2)
+#maxn <- round(max(ergebnissurvey$age),2)
+#minn <- round(min(ergebnissurvey$age),2)
 
-tabelle_scorez <- rbind(meann, mediann, maxn,minn,sd_age )
-row.names(tabelle_scorez) <- c("Mean", "Median", "Max", "Min","Sd" )
-knitr::kable(tabelle_scorez, caption = "Altersübersicht")
+#tabelle_scorez <- rbind(meann, mediann, maxn,minn,sd_age )
+#row.names(tabelle_scorez) <- c("Mean", "Median", "Max", "Min","Sd" )
+#knitr::kable(tabelle_scorez, caption = "Altersübersicht")
 
 
                                                                                                     
@@ -397,7 +397,7 @@ knitr::kable(tabelle_scores, caption = "Diskriptive Statistik für ATI, HCT und 
 
 ### 4.2.1 Inferenzstatistik
 
-Grundsätzlich wollten wir untersuchen, ob es einen Zusammenhang zwischen der Technikaffinität, also dem ATI-Score und dem Alter der Probanden gibt.
+
 
 ```{r}
 #| echo: false
@@ -433,7 +433,7 @@ ageati <- ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey
        x = "Alter",
        y = "ATI-Score")
 
-print(ageati)
+#print(ageati)
 
 ```
 
@@ -585,15 +585,21 @@ Die t-Tests für beide KIs liefern also das gleiche Ergebnis, dass es keinen sig
 
 #### 4.2.1.3 Durchführung der Pearson-Korrelation in Hinblick auf Alter und HCT-Score
 
-Da wir uns in unserer Forschung besonders auf den Umgang verschiedener Altersgruppen mit den Systemen fokussieren, schauen wir uns den Zusammenhang zwischen dem Alter und dem HCT-Score, also dem Human-Computer-Trust genauer an. Um zu überprüfen, ob es hier tatsächlich eine relevanten Zusammenhang gibt, haben wir einen Pearson-Korrelationstest durchgeführt. Den Test haben wir sowohl für die Evaluierende AI als auch für die Recommender AI durchgeführt und auch diese in den @fig-cor1test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden AI) und @fig-cor2test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender AI) visuell dargestellt.
+Da wir uns in unserer Forschung besonders auf den Umgang verschiedener Altersgruppen mit den Systemen fokussieren, schauen wir uns den Zusammenhang zwischen dem Alter und dem HCT-Score, also dem Human-Computer-Trust, genauer an. Um zu überprüfen, ob es hier tatsächlich einen relevanten Zusammenhang gibt, haben wir einen Pearson-Korrelationstest durchgeführt.
+
+Dabei haben wir uns die Ergebnisse der “Perceived Technical Competence”, also der wahrgenommenen technischen Kompetenz des Systems, genauer angeschaut. 
+Den Test haben wir sowohl für die Evaluierende-AI als auch für die Recommender-AI durchgeführt und auch diese in den @fig-cor1test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Evaluierenden-AI) und @fig-cor2test (Korrelation zwischen dem Alter der Probanden und dem HCT-Score der Recommender-AI) visuell dargestellt.
+
 
 #### 4.2.1.4 Auswertung der Pearson-Korrelation
 
-Die Analyse der Evaluierenden KI ergab einen signifikanten Zusammenhang mit einem t-Wert von -2,1155 und einem p-Wert von 0,03617. Dies deutet darauf hin, dass das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert ist (*p \<* 0,05). Der berechnete Korrelationskoeffizient von -0,1766103 zeigt an, dass ein höheres Alter tendenziell mit einem niedrigeren HCT-Score verbunden ist.
+Die Analyse der Recommender-AI ergab einen nicht signifikanten Zusammenhang mit einem t-Wert von -0.95  und einem p-Wert von 0.34 . Es gibt also keine signifikante Korrelation zwischen dem Alter der Nutzenden und dem Vertrauen in die Systeme (*p >* 0.05).
 
-Der Test zur Recommender KI liefert ebenfalls einen signifikanten Zusammenhang, mit einem t-Wert von -3,1246 und einem p-Wert von 0,002168. Auch hier war das Alter der Probanden signifikant negativ mit ihrem HCT-Score korreliert. Der Korrelationskoeffizient in diesem Fall betrug -0,2561782, was erneut darauf hinweist, dass ältere Probanden tendenziell niedrigere HCT-Scores aufwiesen.
+Der Test zur Evaluierenden-AI liefert einen signifikanten Zusammenhang, mit einem t-Wert von -3.56 und einem p-Wert von  0.00054. Hier korreliert das Alter der Probanden signifikant negativ mit ihrem HCT-Score. Der Korrelationskoeffizient in diesem Fall betrug -0.31, was darauf hinweist, dass ältere Probanden bei diesem KI-System niedrigere HCT-Scores aufwiesen. 
 
-In beiden Analysen zeigte sich somit konsistent, dass das Alter der Probanden einen signifikanten Einfluss auf ihren HCT-Score hat, wobei ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten.
+Bei der Recommender-AI konnten also beide Altersgruppen ein ähnliches Level an Vertrauen in das System aufbauen.Bei der Evaluierenden-AI zeigte sich wiederum, dass das Alter der Probanden einen signifikanten Einfluss auf ihren HCT-Score hat, wobei ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. Während der durchschnittliche HCT-Score bei der jüngeren Hälfte der Befragten bei beiden KI-Systemen relativ ähnlich war (4.21 bei der Recommender-AI und 4.15 bei der Evaluierenden-AI), war der HCT-Score bei der älteren Hälfte insgesamt etwas niedriger, aber besonders bei der Evaluierenden-AI signifikant niedriger als bei der Recommender-AI (3.95 für die Recommender-AI und 3.66 für die Evaluierende-AI). 
+
+
 
 ```{r}
 #| echo: false
@@ -668,6 +674,12 @@ ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$HCT_R)) +
 ```
 
 #### 4.2.1.5 Durchführung der Pearson-Korrelation in Hinblick auf Alter und SUS-Score
+Neben dem HCT-Score haben wir auch die SUS-Skala ausgewertet, um mögliche Unterschiede in der Usability zwischen den Altersgruppen zu finden. Eine Visualisierung ist in @fig-cor3test zu sehen.
+
+#### 4.2.1.6 Durchführung der Pearson-Korrelation in Hinblick auf Alter und SUS-Score
+Der Korrelationstest zwischen Alter und SUS-Score ergab keine signifikanten Ergebnisse, da der p-Wert deutlich über der Schwelle von 0.05 liegt. (*t =*  0.66, *df =* 117, *p =* 0.51)
+Die Usability der beiden KI-Systeme ist also über alle Altersgruppen hinweg konsistent.
+
 
 ```{r}
 #| echo: false
@@ -696,7 +708,12 @@ ggplot(ergebnissurvey, aes(x = ergebnissurvey$age , y = ergebnissurvey$SUS)) +
 
 #### 4.2.1.6 Abschließende Zusammenfassung der Inferenzstatistik
 
-In unserer inferenzstatistischen Analyse konnten wir herausstellen, dass ältere Probanden im Durchschnitt niedrigere HCT-Scores erreichten. Da das Vertrauen in die Systeme bei älteren Probanden niedriger ist, ließe sich vermuten, dass sich dies auch auf den Umgang und schließlich die Präzision der Einschätzung auswirkt. Hier konnten wir mit unserem t-Test allerdings keinen signifikanten Zusammenhang erkennen. Aktuell scheinen also sowohl ältere als auch jüngere Probanden unabhängig vom Vertrauen in das System die gleichen Ergebnisse zu erzielen.
+In unserer inferenzstatistischen Analyse konnten wir herausstellen, dass ältere ProbandInnen im Durchschnitt niedrigere HCT-Scores erreichten. Da das Vertrauen in zumindest eines der Systeme bei älteren ProbandInnen niedriger ist, ließe sich vermuten, dass sich dies auch auf den Umgang und schließlich die Präzision der Einschätzung auswirkt. Hier konnten wir mit unserem t-Test allerdings keinen signifikanten Zusammenhang erkennen. 
+
+Auch in den Ergebnissen der SUS-Skala ließ sich kein signifikanter Zusammenhang mit dem Alter finden. Aktuell scheinen also sowohl ältere als auch jüngere Probanden unabhängig vom Vertrauen in das System die gleichen Ergebnisse zu erzielen. 
+
+Zusätzlich zu den altersbedingten Unterschieden, ließen sich auch Unterschiede zwischen den beiden KI-Systemen feststellen. So lag der durchschnittliche HCT-T-Score der Recommender-AI über dem der Evaluierenden-AI. Die Nutzenden haben also mehr Vertrauen in die technische Kompetenz der Recommender-AI, was sich jedoch nicht signifikant in der Präzision widerspiegelt.
+
 
 # 5 Diskussion
 Das Ziel unserer Studie war es herauszufinden, ob das Alter eines Menschen ein entscheidender Faktor bei der Konzipierung von KI-Systemen zur Detektion von Misinformationen ist und ob dies weiterführend mit der Technikaffinität oder dem Vertrauen gegenüber technischen Systemen zusammenhängt. 

@@ -621,13 +621,13 @@ mean_values <- ergebnissurvey %>%
             mean_HCT_R = round(mean(HCT_R, na.rm = TRUE),3))
 
 # Umwandlung der Ergebnisse in ein Datenframe-Format für die Tabelle
-tabelle_scores <- mean_values %>%
-  pivot_longer(cols = c(mean_HCT_E, mean_HCT_R), names_to = "score_type", values_to = "mean_score") %>%
-  pivot_wider(names_from = age_group, values_from = mean_score)
+#tabelle_scores <- mean_values %>%
+  #pivot_longer(cols = c(mean_HCT_E, mean_HCT_R), names_to = "score_type", values_to = "mean_score") %>%
+  #pivot_wider(names_from = age_group, values_from = mean_score)
 
 
 # Erstellung der Tabelle mit knitr::kable
-knitr::kable(tabelle_scores, caption = "Deskriptive Statistik für HCT E und HCT R")
+#knitr::kable(tabelle_scores, caption = "Deskriptive Statistik für HCT E und HCT R")
 ```
 
 ```{r}
@@ -762,5 +762,23 @@ Wir freuen uns auf deine Teilnahme!
 
 ## Anhang 2 - Einwillingungserklärungen der Interviews
 
+[Hier klicken, um die PDF-Datei herunterzuladen - "Einwilligungserklärung_Anna"](SMNF_Einwilligungserklaerung_Anna.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Einwilligungserklärung_Kaja"](SMNF_Einwilligungserklaerung_Kaja.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Einwilligungserklärung_Zelda"](SMNF_Einwilligungserklaerung_Zelda.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Einwilligungserklärung_Vanessa"](SMNF_Einwilligungserklärung_Vanessa.pdf)
+
+
 ## Anhang 3 - Transkription der Interviews
-{include file=""}
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Transkription_1 + Einwilligungserklärung"](SMNF_Transkript_A2_1_Einwilligungserklaerung_Lena.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Transkription_2"](SMNF_Transkript_Interview_A2_3 (1).pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Transkription_3"](SMNF_Transkript_A2_1_Einwilligungserklaerung_Lena.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Transkription_4"](SMNF_Transkript_A2_4.pdf)
+
+[Hier klicken, um die PDF-Datei herunterzuladen - "Transkription_5"](SMNF_Transkript_A2_5.pdf)
